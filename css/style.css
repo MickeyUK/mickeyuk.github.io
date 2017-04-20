@@ -1,0 +1,280 @@
+/* HTML */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 200px; /* bottom = footer height */
+    background: #f4f4f4;
+    min-width: 380px;
+    opacity: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    color: #7893bf;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #767777;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+}
+
+/* Articles */
+article {
+    box-sizing: border-box;
+    max-width: 768px;
+    margin: 0 auto 0 auto;
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #3d3d3d;
+}
+
+.content a {
+    text-decoration: none;
+    color: #0075d1;
+    -webkit-transition: color .5s;
+    transition: color 1s;
+}
+
+.content a:hover {
+    color: #a95eff;
+    -webkit-transition: color .5s;
+    transition: color 1s;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-list li {
+    padding-left: 35px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.link-list .download {
+    background: url('../img/icon_download.png') no-repeat;
+}
+
+.link-list .github {
+    background: url('../img/icon_github.png') no-repeat;
+}
+
+.link-list .guide {
+    background: url('../img/icon_guide.png') no-repeat;
+}
+
+.link-list .video {
+    background: url('../img/icon_video.png') no-repeat;
+}
+
+/* Banner */
+.banner {
+    height: 400px;
+    text-align: center;
+    display: table;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.banner-container {
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 0;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.banner-mug {
+    width: 140px;
+    margin: 0 auto 20px auto;
+    height: 100px;
+}
+
+.banner-mug img {
+    position: relative;
+    left: 8px;
+    float: left;
+}
+
+.code-smoke {
+    position: relative;
+    top: -100px;
+    left: 18px;
+    width: 86px;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 20px;
+}
+
+.code-smoke span {
+    opacity: 0;
+}
+
+.code-smoke-part {
+    -webkit-animation: code-float 4s linear 0s infinite;
+    animation: code-float 4s linear 0s infinite;
+    position: relative;
+    opacity: 0;
+}
+
+@keyframes code-float {
+   0% { left: 0; top: 0px; opacity: 0; }
+   25% { left: -17px; }
+   50% { left: 0px; opacity: 1; }
+   75% { left: 10px; }
+   100% { left: 0; top: -100px; opacity: 0; }
+}
+
+.banner-title {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.banner-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 1024px)  {
+    
+    .banner {
+        height: 350px;
+    }
+    
+}
+
+/* Projects */
+.project-table {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: table;
+    vertical-align: middle;
+}
+
+.project-cell {
+    display: table-cell;
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 320px;
+}
+
+.project-container {
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-thumb {
+    width: 100%;
+    height: 247px;
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.project-webm {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.project-content {
+    height: 120px;
+    margin-bottom: 40px;
+    background: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #292a2b;
+    padding: 8px;
+}
+
+.project-title {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.project-type {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #7aa0bf;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1024px)  {
+    
+    .project-cell {
+        display: block;
+        width: 420px;
+    }
+    
+    .project-thumb {
+        height: 336px;
+    }
+    
+}
+
+@media only screen and (max-width: 640px)  {
+    
+    .project-cell {
+        display: block;
+        width: 320px;
+    }
+    
+    .project-thumb {
+        height: 247px;
+    }
+    
+}
+
+/* Footer */
+.footer {
+    background: #292a2b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 160px;
+    width: 100%;
+    text-align: center;
+    display: table;
+}
+
+.footer-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.social-menu {
+    margin-bottom: 10px;
+}
+
+.social-menu a {
+    font-size: 28px;
+    padding: 2px 6px;
+    margin: 6px;
+    color: #FFFFFF;
+}

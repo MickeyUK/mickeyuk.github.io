@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MickeyUK's Github Portfolio</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Cabin:700|Roboto:300,400" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <div class="banner" style="background: url('../img/banner.png') center fixed;">
+            <div class="banner-container">
+                <div class="banner-mug">
+                    <img src="img/mug.png" title="The elixir of programming!" alt="Coffee mug"/>
+                    <div class="code-smoke">
+                        <span class="codebit-0" style="color: #FFDE00;">0</span>
+                        <span class="codebit-1">1</span>
+                        <span class="codebit-2">0</span>
+                        <span class="codebit-3" style="color: #8fff2d;">1</span>
+                        <span class="codebit-4">0</span>
+                        <span class="codebit-5">1</span>
+                        <span class="codebit-6" style="color: #ffa02d;">0</span>
+                    </div>
+                </div>
+                <div class="banner-title">Michael Dearman</div>
+                <div class="banner-subtitle">Web &amp; Game Developer</div>
+            </div>
+        </div>
+        <div class="content">
+
+            <div class="project-table">
+
+                <!-- Quick Quiz -->
+                <div class="project-cell">
+                    <div class="project-container">
+                        <a href="quick_quiz.php">
+                        <div class="project-thumb" style="background-image: url('img/quick_quiz_thumb.png');">
+                            <video class="project-webm" loop preload="none">
+                                <source src="img/quick_quiz.webm" type="video/webm">
+                            </video>
+                        </div>
+                        </a>
+                        <div class="project-content">
+                            <div class="project-title">
+                                <a href="quick_quiz.php">Quick Quiz</a>
+                            </div>
+                            <div class="project-type">
+                                WordPress Plugin
+                            </div>
+                            <div class="project-description">
+                                A super easy to use plugin for adding quizzes to the bottom
+                                of blog posts.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coins.js -->
+                <div class="project-cell">
+                    <div class="project-container">
+                        <div class="project-thumb" style="background-image: url('img/coins_thumb.png');">
+                            <video class="project-webm" loop preload="none">
+                                <source src="img/coins.webm" type="video/webm">
+                            </video>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-title">
+                                <a href="#">Coins.js</a>
+                            </div>
+                            <div class="project-type">
+                                Javascript
+                            </div>
+                            <div class="project-description">
+                                A simple coin machine game built upon three.js.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WordPress API -->
+                <div class="project-cell">
+                    <div class="project-container">
+                        <div class="project-thumb" style="background-image: url('img/wpapi_thumb.png');">
+                            <video class="project-webm" loop preload="none">
+                                <source src="img/wpapi.webm" type="video/webm">
+                            </video>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-title">
+                                <a href="#">API Framework</a>
+                            </div>
+                            <div class="project-type">
+                                WordPress Plugin
+                            </div>
+                            <div class="project-description">
+                                A barebones API plugin that is easy to customize and add to.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-table">
+
+                <!-- GameMaker Dev Console -->
+                <div class="project-cell">
+                    <div class="project-container">
+                        <div class="project-thumb" style="background-image: url('img/gmconsole_thumb.png');">
+                            <video class="project-webm" loop preload="none">
+                                <source src="img/gmconsole.webm" type="video/webm">
+                            </video>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-title">
+                                <a href="#">Developer Console</a>
+                            </div>
+                            <div class="project-type">
+                                GameMaker Studio
+                            </div>
+                            <div class="project-description">
+                                A barebones API plugin that is easy to customize and add to.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div><!-- content -->
+
+        <script>
+            $(document).ready(function(){
+
+                // Random code bit array
+                var i, codeBit, codeBits = [];
+                for(i=0; i<7; i++) {
+                    codeBits.push(".codebit-"+i);
+                }
+                shuffle(codeBits);
+                i = 0;
+
+                // Code smoke effect
+                var interval = setInterval(function (){
+                    codeBit = codeBits[i];
+                    $(codeBit).addClass('code-smoke-part');
+                    i++;
+
+                    if (i === 7) {
+                        clearInterval(interval);
+                    }  
+                },750);
+
+                // Hover effect for thumbnails
+                $(".project-container").hover( hoverVideo, hideVideo );
+
+                /**
+                * Shuffles array in place.
+                * @param {Array} a items The array containing the items.
+                */
+                function shuffle(a) {
+                    var j, x, i;
+                    for (i = a.length; i; i--) {
+                        j = Math.floor(Math.random() * i);
+                        x = a[i - 1];
+                        a[i - 1] = a[j];
+                        a[j] = x;
+                    }
+                }
+
+                /**
+                 * Play webm video on hover.
+                 * 
+                 * @param {object}
+                 * @returns {void}
+                 */
+                function hoverVideo(e) {  
+                    $('video', this).get(0).play(); 
+                }
+
+                /**
+                 * Stop webm video on mouse leave.
+                 * 
+                 * @param {object}
+                 * @returns {void}
+                 */
+                function hideVideo(e) {
+                    $('video', this).get(0).pause();
+                    $('video', this).get(0).currentTime = 0;
+                }
+
+            });
+        </script>
+
+    </body>
+</html>
