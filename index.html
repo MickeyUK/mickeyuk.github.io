@@ -184,9 +184,6 @@
                     }  
                 },750);
 
-                // Hover effect for thumbnails
-                $(".project-container").hover( hoverVideo, hideVideo );
-
                 /**
                 * Shuffles array in place.
                 * @param {Array} a items The array containing the items.
@@ -199,6 +196,21 @@
                         a[i - 1] = a[j];
                         a[j] = x;
                     }
+                }
+                
+                // Mobile browser
+                if (jQuery.browser.mobile) {
+                    
+                    // Play videos on scroll
+                    $(document).scroll(function(){
+                        $('video','.project-container:in-viewport').get(0).play();
+                    });
+                    
+                } else {
+                    
+                    // Hover effect for thumbnails
+                    $(".project-container").hover( hoverVideo, hideVideo );
+                    
                 }
 
                 /**

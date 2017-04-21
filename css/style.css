@@ -310,6 +310,7 @@ article {
     width: 100%;
     text-align: center;
     display: table;
+    min-width: 380px;
 }
 
 .social-nav,
