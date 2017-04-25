@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Coins.js</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        
+        <style>
+            body { 
+                margin: 0px; 
+                overflow: hidden; 
+            }
+            
+            #overlay {
+                background: #000000;
+                color: #FFFFFF;
+                position: absolute;
+                right: 0;
+                margin: 20px;
+                padding: 10px;
+                border-radius: 10px;
+                font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+                font-weight: 300;
+            }
+            
+            #overlay .title {
+                color: khaki;
+            }
+            
+            #overlay p {
+                margin-bottom: 0;
+            }
+        </style>
+
+        <!-- three.js -->
+        <script type="text/javascript" src="js/three.js"></script>
+        <script type="text/javascript" src="js/libs/stats.min.js"></script>
+        <script type="text/javascript" src="js/libs/dat.gui.min.js"></script>
+        
+        <!-- Physics -->
+        <script type="text/javascript" src="js/physics/physi.js"></script>
+        <script>
+            Physijs.scripts.worker = '/games/coins/js/physics/physijs_worker.js';
+            Physijs.scripts.ammo = '/games/coins/js/physics/ammo.js';
+        </script>
+        
+        <!-- Shaders -->
+        <script src="js/shaders/CopyShader.js"></script>
+        <script src="js/shaders/SMAAShader.js"></script>
+
+        <!-- Postprocessing -->
+        <script src="js/postprocessing/EffectComposer.js"></script>
+        <script src="js/postprocessing/SMAAPass.js"></script>
+        <script src="js/postprocessing/RenderPass.js"></script>
+        <script src="js/postprocessing/MaskPass.js"></script>
+        <script src="js/postprocessing/ShaderPass.js"></script>
+    </head>
+    <body>
+        
+        <!-- Instructions -->
+        <div id="overlay">
+            <span class="title">Coins.js</span>
+            <p class="instructions">Press any key to create a coin.</p>
+        </div>
+
+        <!-- Container for game -->
+        <div id="viewport"></div>
+
+        <!-- Coins.js -->
+        <script type="text/javascript" src="js/game.js"></script>
+        
+    </body>
+</html>
