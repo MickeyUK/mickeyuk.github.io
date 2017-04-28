@@ -87,6 +87,10 @@ article {
     background: url('../img/icon_video.png') no-repeat;
 }
 
+.link-list .play {
+    background: url('../img/icon_play.png') no-repeat;
+}
+
 /* Nav */
 .nav {
     list-style: none;

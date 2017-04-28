@@ -31,6 +31,9 @@ window.addEventListener('resize', onWindowResize, false);
 // Key press
 document.addEventListener('keydown',onKeyDown,false);
 
+// Mouse down
+document.addEventListener('mousedown',onMouseDown,false);
+
 // Start game
 window.onload = init();
 
@@ -288,6 +291,17 @@ function animate() {
  * @returns {void}
  */
 function onKeyDown() {
+    
+    createCoin(randomRange(-40,40),randomRange(80,100),randomRange(-20,-100));
+    
+}
+
+/**
+ * On mouse down.
+ * 
+ * @returns {void}
+ */
+function onMouseDown() {
     
     createCoin(randomRange(-40,40),randomRange(80,100),randomRange(-20,-100));
     

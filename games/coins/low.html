@@ -9,27 +9,22 @@
         <style>
             body { 
                 margin: 0px; 
-                overflow: hidden; 
-            }
-            
-            #overlay {
-                background: #000000;
-                color: #FFFFFF;
-                position: absolute;
-                right: 0;
-                margin: 20px;
-                padding: 10px;
-                border-radius: 10px;
+                overflow: hidden;
                 font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-                font-weight: 300;
             }
             
-            #overlay .title {
-                color: khaki;
+            #viewport {
+                width: 40%;
+                margin: 0 auto;
             }
             
-            #overlay p {
-                margin-bottom: 0;
+            canvas {
+                width: 100% !important;
+                height: auto !important;
+            }
+            
+            #viewport div {
+                display: none;
             }
         </style>
 
@@ -57,12 +52,6 @@
         <script src="js/postprocessing/ShaderPass.js"></script>
     </head>
     <body>
-        
-        <!-- Instructions -->
-        <div id="overlay">
-            <span class="title">Coins.js</span>
-            <p class="instructions">Press any key or tap <br>screen to create a coin.</p>
-        </div>
 
         <!-- Container for game -->
         <div id="viewport"></div>
