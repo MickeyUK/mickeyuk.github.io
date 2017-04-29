@@ -71,24 +71,40 @@ article {
     margin-bottom: 10px;
 }
 
-.link-list .download {
+.list-download {
     background: url('../img/icon_download.png') no-repeat;
 }
 
-.link-list .github {
+.list-github {
     background: url('../img/icon_github.png') no-repeat;
 }
 
-.link-list .guide {
+.list-guide {
     background: url('../img/icon_guide.png') no-repeat;
 }
 
-.link-list .video {
+.list-video {
     background: url('../img/icon_video.png') no-repeat;
 }
 
-.link-list .play {
+.list-play {
     background: url('../img/icon_play.png') no-repeat;
+}
+
+.list-email {
+    background: url('../img/icon_email.png') no-repeat;
+}
+
+.list-skype {
+    background: url('../img/icon_skype.png') no-repeat;
+}
+
+.list-reddit {
+    background: url('../img/icon_reddit.png') no-repeat;
+}
+
+.list-twitter {
+    background: url('../img/icon_twitter.png') no-repeat;
 }
 
 /* Nav */
