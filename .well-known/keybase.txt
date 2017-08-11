@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/mickeyuk
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mickeyuk.github.io
+  * I am mickeyuk (https://keybase.io/mickeyuk) on keybase.
+  * I have a public key with fingerprint A7A6 4411 EFE2 7514 C164  E731 4AA5 07A6 6109 B644
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101dbf69843931c3e92fc5b06e181361913466712727791902a87e12deb271f286a0a",
+      "fingerprint": "a7a64411efe27514c164e7314aa507a66109b644",
+      "host": "keybase.io",
+      "key_id": "4aa507a66109b644",
+      "kid": "0101dbf69843931c3e92fc5b06e181361913466712727791902a87e12deb271f286a0a",
+      "uid": "cac5b611576871097403f8a23818f219",
+      "username": "mickeyuk"
+    },
+    "service": {
+      "hostname": "mickeyuk.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1502472907,
+  "expire_in": 157680000,
+  "prev": "2b1f22d8ccb6d174b98dc8f7ac872bd7fa3877116e2cc05b6c7e395906dcedc5",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMIjAnicrVJdSBRRGN31J/8yDLLwIc3Bh2xN5s7fndleAomiyIcMsRCXmTt3dqfV
+mXVndstEg0KzyFSyRCKSDLISpCSzhwWzwAdFKDIJMU2QsgwfAkEytjtWL9Fj9+Vy
+v++c853zcV9mJrrS3XozlfRkda/HPf78VsR1ovXzeD2lmGod5a2ngnjjwtUqtmxf
+UFcpL0UDGqiKJkgix0osQCyWGA3xCi1gIAJWABJgOUGAgIEMhBKQaEYWIQaMihUG
+Ao0RBZmWqSJK0w0/DofCumETWRnKAscBgDXMQB5wCAgchizgZJmnSU8AtKQQBCEG
+TMthEHOKbOFi3SQ18vBt2PsH/j/7jmzIIZlwBQB4KIiQzIIczWqizLAiEDUGSA7Q
+wmFDrsEEXaMj4jASpBqKKFKN6gg7i3WS/IUo9ut2IKL8ShUKm7aJzGrSD9h2yPI6
+fLsu5BBOY8X3W8qn6IZKtkkYURy2dNOgvIAgka072oCnGQ4yEg2LKHwmpIexT3cQ
+jnWaHGcOjhJJRiExGVVESBFUADlFElUkalBGImQUFWoyK0IIgIAZhGgSH0HMSrxE
+CyrCKuIpJ1ytYVJentiU/UTS0v2GbEfCmGoYHalMcrnTXZuSE5xf5kpPy/rz924U
+psTPJvSAqYXiMlfbtdqxhl4rZXlHVspiTkrndEFfk7u2vyRv/pGaO3RzpD13dXMf
+nzD1NjUvOnpgIaPqTjbin8Ymyr8FW+5+yc1bX/DUlMbvR3O3T+zhY8dnu+61lOXV
+Vz6Le/ezr7/S3eXDb7LS1gc6y6IVTa5PM7PzK0ea66e1pLmkwGJj97GTrcmXeteG
+1nZ9OPqCfXUxIzpYGph5eDm2rTr1gdZ8oaLF1xCcyy/5gQr6E6/eXr/eZcS3ZipX
+DhXubl7KeW+WLHkONi73rhRNtnmt7xWnPO8Ke7bsHI6p+fta21n3x8dzY4ezq8B5
+Yfbc/cmOisGBNMM/1LfUMfQTSVE9KA==
+=AoaS
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mickeyuk
+
+==================================================================
