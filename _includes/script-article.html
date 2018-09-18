@@ -1,0 +1,45 @@
+<script>
+
+  // Fixed sidebar
+  $(document).on("scroll", function(e) {
+    if ($(this).scrollTop() > 102) {
+      $('#sidebar-contents').addClass("sidebar-fixed");
+    } else {
+      $('#sidebar-contents').removeClass("sidebar-fixed");
+    }
+  });
+
+  // Converts image alt text to figcaption
+  $('article img').each(function(){
+    $(this).wrap('<figure></figure>');
+    $(this).after(function(){
+      return '<figcaption>'+$(this).attr('alt')+'</figcaption>';
+    });
+  });
+
+  // Anchor smooth scrolling
+  $('.article-content h1').each(function(){
+    $('#article-contents').append('<li><a onclick="event.preventDefault(); smoothScroll(this);" href="#'+$(this).html().toLowerCase()+'">'+$(this).html()+'</a></li>');
+  });
+
+  function smoothScroll(element) {
+    
+    // Target
+    var target = $(element).attr('href');
+    
+    // Move to target
+    $('html, body').animate({
+        scrollTop: $(target).offset().top - 80
+      }, 500, function() {
+        $(target).focus();
+        if ($(target).is(":focus")) {
+          return false;
+        } else {
+          $(target).attr('tabindex','-1');
+          $(target).focus();
+        };
+    });
+
+  }
+    
+</script>
