@@ -1,0 +1,122 @@
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.nav-horz li {
+    float: left;
+}
+
+.nav-horz a {
+    display: block;
+    padding: 10px 14px;
+}
+
+// Main Nav
+#nav-main ul {
+    display: table;
+    margin: 0 auto;
+}
+
+.nav a {
+    color: $white-color;
+    transition: .5s color;
+    -webkit-transition: .5s color;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    color: $hover-color;
+    transition: .5s color;
+    -webkit-transition: .5s color;
+}
+
+.nav a.active {
+    color: $link-color;
+}
+
+// Meta links
+.meta-links {
+    list-style: none;
+    margin: 0;
+}
+
+.meta-links a {
+    color: $grey-color !important;
+}
+
+.meta-links a:hover {
+    color: $grey-color-dark !important;
+}
+
+.meta-links li {
+    float: left;
+}
+
+.meta-links li:after {
+    content:'/';
+    color: $grey-color-dark;
+    margin: 0 6px;
+}
+
+.meta-links li:last-child:after, 
+.meta-links li:first-child:after {
+    content: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#menu-toggle a {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    color: $white-color;
+    display: block;
+    padding: 10px 14px;
+}
+
+@include media-query($on-palm) {
+
+    .site-header {
+        position: fixed;
+    }
+
+    .site-header nav {
+        display: block;
+    }
+
+    #nav-main {
+        display: none;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    #nav-main li {
+        float: none;
+        text-align: center;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #menu-toggle .nav a {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+    }
+
+    .social-links a {
+        padding: 10px !important;
+    }
+
+}

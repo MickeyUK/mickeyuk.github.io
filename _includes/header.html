@@ -1,0 +1,18 @@
+<header class="site-header" role="banner">
+
+    <div class="wrapper">
+      <div id="menu-toggle">
+        {% if include.contents %}<a id="menu-contents" href="#" style="float: left;">Contents</a>{% endif %}
+        <a href="#" style="float: right;" onclick="$('#nav-main').slideToggle('fast'); $('#menu-contents').slideToggle('fast');">Menu</a>
+      </div>
+      <nav id="nav-main">
+        <ul class="nav nav-horz">
+          <li><a href="/" {% if include.active == "Projects" %}onclick="event.preventDefault()" class="active"{% endif %}>Projects</a></li>
+          <li><a href="https://mickeyuk.portfoliobox.net/" target="_blank">Design Work</a></li>
+          <li><a href="/blog" {% if include.active == "Blog" %}onclick="event.preventDefault()" class="active"{% endif %}>Blog</a></li>
+          <li><a href="/about" {% if include.active == "About Me" %}onclick="event.preventDefault()" class="active"{% endif %}>About Me</a></li>
+        </ul>
+      </nav>
+    </div>
+
+</header>

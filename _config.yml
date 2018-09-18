@@ -1,0 +1,74 @@
+# Site settings
+title: Michael Dearman - Web & Game Developer
+description: >-
+  A pun-loving programmer based in London that specializes
+  in WordPress and video game development.
+baseurl: ""
+url: "http://mickeyuk.com"
+permalink: /:categories/:day/:month/:year/:title
+
+# Google Analytics
+google_analytics: "UA-125828943-1"
+
+# Social Networks
+social:
+  reddit: mickeyuk
+  github: mickeyuk
+  twitter: MickeyUK2017
+  youtube: UChx7oIx2UkwB2559B9ukVwA
+  facebook: michaeldearmanuk
+  steam: MickeyUK2011
+  spotify: mickeyuk
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+timezone: "Europe/London"
+
+# SASS
+sass:
+  sass_dir: _sass
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path
+
+# Front Matter Default
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "article"
+      categories: 
+        - ""
+      thumbnail: ""
+      video: ""
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      categories: 
+        - ""
+      thumbnail: ""
+      video: ""
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "article"
+      categories: 
+        - ""
+      order: 1
+      icon: ""
+      thumbnail: ""
+      webm: ""
+      video: ""
+      background: ""
+      description: ""
+      SyntaxHighlight: false
