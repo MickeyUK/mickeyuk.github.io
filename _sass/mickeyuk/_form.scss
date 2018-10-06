@@ -8,6 +8,14 @@ input, textarea {
     font-family: $base-font-family;
     font-size: $base-font-size;
     color: $grey-color-dark;
+    -webkit-transition: border .5s;
+    transition: border .5s;
+}
+
+input:focus, textarea:focus {
+    border: solid 1px $hover-color;
+    -webkit-transition: border .5s;
+    transition: border .5s;
 }
 
 button {

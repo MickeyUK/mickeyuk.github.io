@@ -1,6 +1,6 @@
 ---
 title: Places Scraper
-layout: article
+layout: places-scraper
 categories:
 - Google Api
 order: 1
