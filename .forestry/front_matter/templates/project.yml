@@ -226,6 +226,9 @@ fields:
 - type: blocks
   template_types:
   - game-frame
+  label: Blocks
+  name: blocks
+  description: Custom elements for the project page.
 pages:
 - _projects/github-portfolio.md
 - _projects/api-framework.md
