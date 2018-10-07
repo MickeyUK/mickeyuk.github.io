@@ -24,7 +24,7 @@ I had originally coded a static site from scratch to host with GitHub Pages as a
 
 I grew unhappy with this design for a few reasons; I felt the header banner took up too much space, the grid layout felt squashed and the code was a bit of a mess (in my haste to put together something quickly!). Further compounding my distaste was that whenever I wanted to update my grid of projects, I had to add them manually in the code...I wanted something more elegant.
 
-![What the site used to look like.](https://res.cloudinary.com/mickeyuk/v1538884202/images/old-site.png "What the site used to look like.")
+![What the site used to look like.](https://res.cloudinary.com/mickeyuk/v1538942261/images/old-site.jpg "What the site used to look like.")
 
 As I knew I wanted to update the website on a semi-regular basis, I decided to use a static site generator  (GitHub Pages doesn't allow server side code). I landed on [Jekyll](https://jekyllrb.com/) as it's one of the most popular and easy to learn. Personally, I find Markdown a bit boring to look at in a code editor, so I used the[ jekyll-admin](https://github.com/jekyll/jekyll-admin) plugin during development to author the site's contents. Now that the site is live I use [forestry.io](https://forestry.io/)'s static cms to manage it.
 
