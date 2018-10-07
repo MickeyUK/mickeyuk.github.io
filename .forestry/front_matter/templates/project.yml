@@ -218,7 +218,7 @@ fields:
   description: ''
   hidden: true
   config:
-    required: true
+    required: false
 - type: boolean
   name: syntaxHighlight
   label: Syntax Highlighting
