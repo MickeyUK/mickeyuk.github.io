@@ -197,9 +197,10 @@ fields:
   name: thumbnail
   label: Thumbnail
   description: Displayed in project loop and in sidebar.
-- type: file
+- type: text
   name: webm
   label: WebM
-  description: Displayed when hover over thumbnail in project loop.
+  description: Cloudinary path to webm file (because forestry.io feels the need to
+    force file types in media gallery).
 pages:
 - _projects/test.md
