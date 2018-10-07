@@ -30,7 +30,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 timezone: "Europe/London"
-exclude: [demos]
 
 # SASS
 sass:
