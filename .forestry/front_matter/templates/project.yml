@@ -198,6 +198,10 @@ fields:
   name: webm
   label: WebM
   description: Cloudinary path to webm file.
+- type: text
+  name: video
+  label: Video
+  description: The URL to a video demonstrating the project.
 - type: textarea
   config:
     wysiwyg: true
@@ -219,9 +223,5 @@ fields:
   name: syntaxHighlight
   label: Syntax Highlighting
   description: Toggles the syntax highlighting plugin for code blocks.
-- type: text
-  name: video
-  label: Video
-  description: The URL to a video demonstrating the project.
 pages:
 - _projects/places-scraper.md
