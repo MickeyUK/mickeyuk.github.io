@@ -4,12 +4,15 @@ layout: project
 icon: google
 date: 2018-10-07 06:06:05 +0000
 priority: 1
-categories: []
+categories:
+- WordPress
+- Plugin
 thumbnail: https://res.cloudinary.com/mickeyuk/v1538884200/images/places_scraper.jpg
 webm: https://res.cloudinary.com/mickeyuk/video/upload/v1538887575/videos/places_scraper.webm
 description: A tool for using Google and Hunter.io to collate business e-mail addresses.
 video: ''
 syntaxHighlight: true
+blocks: []
 
 ---
 # Overview
