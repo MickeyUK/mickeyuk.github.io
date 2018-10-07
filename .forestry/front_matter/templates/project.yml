@@ -215,5 +215,9 @@ fields:
   hidden: true
   config:
     required: true
+- type: boolean
+  name: syntaxHighlight
+  label: Syntax Highlighting
+  description: Toggles the syntax highlighting plugin for code blocks.
 pages:
 - _projects/places-scraper.md
