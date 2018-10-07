@@ -6,11 +6,11 @@ categories:
 - three.js
 order: 2
 icon: pacman
-thumbnail: coins.jpg
-webm: coins.webm
+thumbnail: https://res.cloudinary.com/mickeyuk/v1538884199/images/coins.jpg
+webm: https://res.cloudinary.com/mickeyuk/video/upload/v1538887577/videos/coins.webm
 description: An arcade coin machine game made with the three.js javascript library.
----
 
+---
 # Overview
 An arcade coin machine game made with the [three.js](https://threejs.org/) javascript library.
 
