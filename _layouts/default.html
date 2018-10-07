@@ -38,9 +38,9 @@
 
               <div class="project-container">
                 <a href="{{ project.url }}">
-                  <div class="project-thumb" style="background-image: url('/assets/images/thumbs/{{ project.thumbnail }}');">
+                  <div class="project-thumb" style="background-image: url('{{ project.thumbnail }}');">
                     <video class="project-webm" loop preload="none">
-                      <source src="/assets/webm/{{ project.webm }}" type="video/webm">
+                      <source src="{{ project.webm }}" type="video/webm">
                     </video>
                   </div>
                 </a>
