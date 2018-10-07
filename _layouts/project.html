@@ -45,6 +45,9 @@
         </main>
       </div>
 
+      {% include jquery.html %}
+      {% include script-article.html %}
+
       {% for block in page.blocks %}
         {% assign template = block.template %}
 
@@ -88,10 +91,6 @@
     </div>
 
   </body>
-
-  {% include jquery.html %}
-  
-  {% include script-article.html %}
 
   {% if page.syntaxHighlight %}
     {% include script-highlight.html %}
