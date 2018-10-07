@@ -6,12 +6,12 @@ categories:
 - Plugin
 order: 5
 icon: wordpress
-thumbnail: wp_quiz.jpg
+thumbnail: https://res.cloudinary.com/mickeyuk/v1538884201/images/wp_api.jpg
 webm: quick_quiz.webm
 video: https://www.youtube.com/watch?v=OO7kZRI8exs
 description: Add interactive quizzes to the bottom of blog posts.
----
 
+---
 # Overview
 A [WordPress](https://en-gb.wordpress.org/) plugin for adding interactive quizzes to the bottom of your posts. Users work against the clock as they type their answers in, and can share their scores on various social networking sites.
 
