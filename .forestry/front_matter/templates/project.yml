@@ -201,3 +201,5 @@ fields:
   name: webm
   label: WebM
   description: Displayed when hover over thumbnail in project loop.
+pages:
+- _projects/test.md
