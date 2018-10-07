@@ -223,6 +223,9 @@ fields:
   name: syntaxHighlight
   label: Syntax Highlighting
   description: Toggles the syntax highlighting plugin for code blocks.
+- type: blocks
+  template_types:
+  - game-frame
 pages:
 - _projects/github-portfolio.md
 - _projects/api-framework.md
