@@ -1,6 +1,6 @@
 ---
 title: Places Scraper
-layout: article
+layout: project
 icon: google
 date: 2018-10-07 06:06:05 +0000
 priority: 1
