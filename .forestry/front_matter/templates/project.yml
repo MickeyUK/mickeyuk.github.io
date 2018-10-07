@@ -216,9 +216,9 @@ fields:
   label: Layout
   default: project
   description: ''
-  hidden: true
+  hidden: false
   config:
-    required: false
+    required: true
 - type: boolean
   name: syntaxHighlight
   label: Syntax Highlighting
