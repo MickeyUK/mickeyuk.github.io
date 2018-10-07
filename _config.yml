@@ -20,6 +20,10 @@ social:
   steam: MickeyUK2011
   spotify: mickeyuk
 
+# Assets
+assets:
+  images: "https://res.cloudinary.com/mickeyuk/images"
+
 # Build settings
 markdown: kramdown
 plugins:
