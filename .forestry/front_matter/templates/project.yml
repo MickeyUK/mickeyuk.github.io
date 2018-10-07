@@ -3,6 +3,16 @@ label: Project
 hide_body: false
 is_partial: false
 fields:
+- type: select
+  config:
+    source:
+      type: simple
+    options:
+    - article
+    - game
+  default: article
+  label: Layout
+  name: layout
 - type: tag_list
   name: categories
   label: Categories
