@@ -224,6 +224,7 @@ fields:
   label: Syntax Highlighting
   description: Toggles the syntax highlighting plugin for code blocks.
 pages:
+- _projects/batty.md
 - _projects/developer-console.md
 - _projects/quick-quiz.md
 - _projects/mystery-jack.md
