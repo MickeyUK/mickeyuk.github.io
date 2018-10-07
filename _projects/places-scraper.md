@@ -5,12 +5,12 @@ categories:
 - Google Api
 order: 1
 icon: google
-thumbnail: places_scraper.jpg
-webm: places_scraper.webm
+thumbnail: https://res.cloudinary.com/mickeyuk/v1538884200/images/places_scraper.jpg
+webm: https://res.cloudinary.com/mickeyuk/video/upload/v1538887575/videos/places_scraper.webm
 description: A tool for using Google and Hunter.io to collate business e-mail addresses.
 syntaxHighlight: true
----
 
+---
 # Overview
 The Google Places API does not allow you to search for business e-mail addresses as this would make things too easy for spammers. However, this serves an example of how to use [Google Places](https://developers.google.com/places/) along with [Hunter.io](http://hunter.io/) to collate business e-mail addresses over a set radius. Use responsibly, folks!
 
