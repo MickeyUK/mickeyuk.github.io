@@ -230,6 +230,7 @@ fields:
   name: blocks
   description: Custom elements for the project page.
 pages:
+- _projects/isometric-controller.md
 - _projects/coins.js.md
 - _projects/github-portfolio.md
 - _projects/api-framework.md
@@ -237,5 +238,4 @@ pages:
 - _projects/developer-console.md
 - _projects/quick-quiz.md
 - _projects/mystery-jack.md
-- _projects/isometric-controller.md
 - _projects/places-scraper.md
