@@ -7,7 +7,7 @@ categories:
 order: 5
 icon: wordpress
 thumbnail: https://res.cloudinary.com/mickeyuk/v1538884201/images/wp_api.jpg
-webm: quick_quiz.webm
+webm: https://res.cloudinary.com/mickeyuk/video/upload/v1538887572/videos/quick_quiz.webm
 video: https://www.youtube.com/watch?v=OO7kZRI8exs
 description: Add interactive quizzes to the bottom of blog posts.
 
