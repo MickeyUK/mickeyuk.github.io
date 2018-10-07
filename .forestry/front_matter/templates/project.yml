@@ -224,4 +224,5 @@ fields:
   label: Syntax Highlighting
   description: Toggles the syntax highlighting plugin for code blocks.
 pages:
+- _projects/coins.js.md
 - _projects/places-scraper.md
