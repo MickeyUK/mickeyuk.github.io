@@ -23,3 +23,10 @@ fields:
   description: The max height for the iframe.
   config:
     required: true
+- type: text
+  name: button_label
+  label: Button Label
+  description: The label for the button that loads in the iframe.
+  config:
+    required: true
+  default: Play
