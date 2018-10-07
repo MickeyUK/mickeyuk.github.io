@@ -31,7 +31,7 @@
 
         <section class="flex-grid" style="width: 100%;">
 
-          {% assign projects = site.projects | sort: 'order' %}
+          {% assign projects = site.projects | sort: 'priority' %}
           {% for project in projects limit:3 offset:offset %}
             
             <div class="flex-col panel">
