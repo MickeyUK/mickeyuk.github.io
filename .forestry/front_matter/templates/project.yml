@@ -213,5 +213,3 @@ fields:
   label: Description
   name: description
   description: Short description for project.
-pages:
-- _projects/test.md
