@@ -26,18 +26,20 @@
             </div>
             <div class="article-content">
               {{ content }}
+              {% if page.blocks contains "game-frame" %}
               <form id="demo-form" method="GET"><center>
-                <button id="form-submit" type="submit">Play</button></center>
+                <button id="form-submit" type="submit">Test</button></center>
               </form>
+              {% endif %}
             </div>
           </article>
         </main>
       </div>
 
-      <div id="game-container">
-        <div id="game" style="max-width: {{ page.gameWidth }}px;">
+        <div id="game-container">
+          <div id="game" style="max-width: {{ page.gameWidth }}px;">
+          </div>
         </div>
-      </div>
 
       {% include footer.html %}
 
