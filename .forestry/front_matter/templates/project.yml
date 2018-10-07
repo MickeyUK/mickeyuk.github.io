@@ -3,6 +3,10 @@ label: Project
 hide_body: false
 is_partial: false
 fields:
+- type: number
+  name: priority
+  label: Priority
+  description: Prioritizes the placement in the projects loop.
 - type: select
   config:
     source:
@@ -202,8 +206,7 @@ fields:
 - type: text
   name: webm
   label: WebM
-  description: Cloudinary path to webm file (because forestry.io feels the need to
-    force file types in media gallery).
+  description: Cloudinary path to webm file.
 - type: textarea
   config:
     wysiwyg: true
