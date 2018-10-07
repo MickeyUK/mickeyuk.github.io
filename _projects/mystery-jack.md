@@ -16,5 +16,6 @@ undefined:
   max_width: '960'
   max_height: '760'
   source: https://itch.io/embed-upload/920959
+  button_label: Play
 
 ---
