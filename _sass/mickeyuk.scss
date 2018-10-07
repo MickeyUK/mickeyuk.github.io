@@ -32,7 +32,7 @@ $grey-color-dark:  darken($grey-color, 15%) !default;
 
 // Breakpoints
 $content-width:    800px !default;
-$on-tablet:        1320px !default;
+$on-tablet:        1024px !default;
 $on-palm:          420px !default;
 
 // Media Queries @include media-query($on-palm)
@@ -45,6 +45,23 @@ $on-palm:          420px !default;
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
 }
+
+@function ratio($width, $height) {
+  @return percentage( $height / $width);
+}
+
+@mixin generateRatios($width, $height, $prefix: "ratio-") {
+
+  $class-name: $prefix + $width + "x" + $height;
+
+  .#{$class-name} {
+    padding-bottom: ratio($width, $height);
+  }
+
+}
+
+@include generateRatios(16,9);
+@include generateRatios(4,3);
 
 // Partials
 @import "mickeyuk/base";

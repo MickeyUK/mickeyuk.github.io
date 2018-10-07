@@ -2,8 +2,7 @@
 
     <div class="wrapper">
       <div id="menu-toggle">
-        {% if include.contents %}<a id="menu-contents" href="#" style="float: left;">Contents</a>{% endif %}
-        <a href="#" style="float: right;" onclick="$('#nav-main').slideToggle('fast'); $('#menu-contents').slideToggle('fast');">Menu</a>
+        <a href="#" style="float: right;" onclick="event.preventDefault(); $('#nav-main').slideToggle('fast'); $('#menu-contents').slideToggle('fast');">Menu</a>
       </div>
       <nav id="nav-main">
         <ul class="nav nav-horz">

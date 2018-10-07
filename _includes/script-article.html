@@ -1,11 +1,19 @@
 <script>
 
-  // Fixed sidebar
   $(document).on("scroll", function(e) {
+
+    var pageBottom = $('#page-body').position().top + $('#page-body').outerHeight(true)-$('#sidebar-contents').outerHeight(true)-80;
+
     if ($(this).scrollTop() > 102) {
       $('#sidebar-contents').addClass("sidebar-fixed");
     } else {
       $('#sidebar-contents').removeClass("sidebar-fixed");
+    }
+
+    if ($(this).scrollTop() > pageBottom) {
+      $('#sidebar-contents').fadeOut("fast");
+    } else {
+      $('#sidebar-contents').fadeIn("fast");
     }
   });
 

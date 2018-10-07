@@ -4,7 +4,7 @@ layout: article
 categories:
 - WordPress
 - Plugin
-order: 3
+order: 5
 icon: wordpress
 thumbnail: wp_quiz.jpg
 webm: quick_quiz.webm

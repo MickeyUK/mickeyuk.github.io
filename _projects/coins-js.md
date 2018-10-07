@@ -1,6 +1,6 @@
 ---
 title: Coins.js
-layout: article
+layout: coinsjs
 categories:
 - Javascript
 - three.js

@@ -4,7 +4,7 @@ layout: article
 categories:
 - WordPress
 - Plugin
-order: 5
+order: 8
 icon: wordpress
 thumbnail: wp_api.jpg
 webm: wpapi.webm

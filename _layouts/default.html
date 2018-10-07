@@ -37,15 +37,17 @@
             <div class="flex-col panel">
 
               <div class="project-container">
-                <div class="project-thumb" style="background-image: url('/assets/images/thumbs/{{ project.thumbnail }}');">
-                  <video class="project-webm" loop preload="none">
-                    <source src="/assets/webm/{{ project.webm }}" type="video/webm">
-                  </video>
-                </div>
+                <a href="{{ project.url }}">
+                  <div class="project-thumb" style="background-image: url('/assets/images/thumbs/{{ project.thumbnail }}');">
+                    <video class="project-webm" loop preload="none">
+                      <source src="/assets/webm/{{ project.webm }}" type="video/webm">
+                    </video>
+                  </div>
+                </a>
                 <div class="project-meta">
                     <div class="project-header">
                       <div class="project-icon">
-                        <span class="icon icon-{{ project.icon }}" style="font-size: 50px;"></span>
+                        <div class="icon icon-{{ project.icon }}" style="font-size: 50px;"></div>
                       </div>
                       <div class="project-title">
                         <h1><a href="{{ project.url }}">{{ project.title }}</a></h1>

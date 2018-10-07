@@ -3,7 +3,7 @@ title: GitHub Portfolio
 layout: article
 categories:
 - Jekyll
-order: 4
+order: 9
 icon: github
 thumbnail: website.jpg
 webm: website.webm
@@ -25,6 +25,8 @@ As I knew I wanted to update the website on a semi-regular basis, I decided to u
 On to the design. I felt that instead of a static patterned header on the homepage, an animated reel of some of projects whould draw in visitors better. I recorded some short clips of some of my projects using [Windows 10's game mode DVR](https://www.windowscentral.com/how-enable-disable-game-mode-windows-10), chucked them all together in [Adobe Premiere](https://www.adobe.com/uk/products/premiere.html) and added an overlay effect. I embeded the video with [YouTube's Iframe player API](https://developers.google.com/youtube/iframe_api_reference).
 
 Whilst I am generally not a fan of assisted scrolling (hands off my mousewheel!), I thought it would work well for my homepage as an interesting way to show off my projects. For this I used the jQuery plugin [Scrollify](https://projects.lukehaas.me/scrollify/). The section scrolling also solved a cross-platform problem. The project thumbnails are snapshots from a small video, and on PC when the user hovers the mouse over these thumbnails the video will play. This is of course a problem on touch screen devices. With scrollify, I was able to detect when a project panel was being viewed and trigger the video to start playing.
+
+For my code mug logo, I created the mug illustration in [Adobe Illustrator](https://www.adobe.com/uk/products/illustrator.html), and the code bit smoke effect with the [HTML5 canvas](https://www.w3schools.com/html/html5_canvas.asp).
 
 # Download
 The GitHub reposity for the project is **[here](https://github.com/MickeyUK/mickeyuk.github.io)**.
