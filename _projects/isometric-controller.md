@@ -13,8 +13,8 @@ description: 'An example of an isometric controller in the Unity engine. '
 syntaxHighlight: true
 blocks:
 - template: game-frame
-  max_width: '960'
-  max_height: '600'
+  max_width: '980'
+  max_height: '660'
   button_label: Play
   source: "/assets/demos/iso-controller/index.html"
 
