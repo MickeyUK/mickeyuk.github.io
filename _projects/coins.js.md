@@ -12,6 +12,12 @@ webm: https://res.cloudinary.com/mickeyuk/video/upload/v1538887577/videos/coins.
 video: ''
 description: An arcade coin machine game made with the three.js javascript library.
 syntaxHighlight: false
+blocks:
+- template: game-frame
+  max_width: '960'
+  max_height: '760'
+  button_label: Play
+  source: http://mickeyuk.com/demos/js-coins/index.html
 
 ---
 # Overview

@@ -13,7 +13,7 @@ description: Play one-on-one blackjack and win one of Jack's coveted mystery box
 syntaxHighlight: false
 blocks:
 - template: game-frame
-  max_width: '960'
+  max_width: '1280'
   max_height: '760'
   button_label: Play
   source: https://itch.io/embed-upload/920959
