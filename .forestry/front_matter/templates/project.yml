@@ -10,6 +10,7 @@ fields:
     options:
     - article
     - game
+    required: true
   default: article
   label: Layout
   name: layout
@@ -189,6 +190,7 @@ fields:
     - git
     - unity
     - gamemaker
+    required: true
   default: unity
   label: Icon
   name: icon
@@ -202,5 +204,14 @@ fields:
   label: WebM
   description: Cloudinary path to webm file (because forestry.io feels the need to
     force file types in media gallery).
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+    required: true
+  label: Description
+  name: description
+  description: Short description for project.
 pages:
 - _projects/test.md
