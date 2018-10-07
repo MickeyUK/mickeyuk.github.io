@@ -17,7 +17,7 @@ blocks:
   max_width: '960'
   max_height: '760'
   button_label: Play
-  source: http://mickeyuk.com/demos/js-coins/index.html
+  source: https://mickeyuk.com/demos/js-coins/index.html
 
 ---
 # Overview
