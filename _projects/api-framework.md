@@ -6,13 +6,13 @@ categories:
 - Plugin
 order: 8
 icon: wordpress
-thumbnail: wp_api.jpg
-webm: wpapi.webm
+thumbnail: https://res.cloudinary.com/mickeyuk/v1538884201/images/wp_api.jpg
+webm: https://res.cloudinary.com/mickeyuk/video/upload/v1538887573/videos/wpapi.webm
 video: https://www.youtube.com/watch?v=ZSFgAL7buJo
 description: A barebones API plugin for WordPress that is easy to customize and add
   to.
----
 
+---
 # Overview
  A simple API plugin for [WordPress](http://wordpress.org), that serves more as a framework for those wanting to craft their own RESTful API service.
 
