@@ -212,7 +212,7 @@ fields:
   label: Layout
   default: project
   description: ''
-  hidden: false
+  hidden: true
   config:
     required: true
 pages:
