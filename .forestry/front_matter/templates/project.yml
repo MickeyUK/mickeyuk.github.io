@@ -7,6 +7,9 @@ fields:
   name: priority
   label: Priority
   description: Prioritizes the placement in the projects loop.
+  config:
+    required: true
+  default: '1'
 - type: tag_list
   name: categories
   label: Categories
