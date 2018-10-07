@@ -38,39 +38,3 @@ collections:
   projects:
     output: true
     permalink: /projects/:path
-
-# Front Matter Default
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "article"
-      categories: 
-        - ""
-      thumbnail: ""
-      video: ""
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      categories: 
-        - ""
-      thumbnail: ""
-      video: ""
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "article"
-      categories: 
-        - ""
-      order: 1
-      icon: ""
-      thumbnail: ""
-      webm: ""
-      video: ""
-      background: ""
-      description: ""
-      SyntaxHighlight: false
