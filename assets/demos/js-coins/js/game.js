@@ -324,7 +324,7 @@ function initPanorama(imagePath) {
 function initCabinet() {
     
     // Cabinet model
-    loader.load('models/cabinet.json', function (geometry, materials) {
+    loader.load('models/cabinet.txt', function (geometry, materials) {
         
         // Create mesh for model
         var material = new THREE.MultiMaterial(materials);
@@ -400,7 +400,7 @@ function initLights() {
  */
 function createCoin(posX=0,posY=0,posZ=0) {
     
-    loader.load('models/coin.json', function (geometry, materials) {
+    loader.load('models/coin.txt', function (geometry, materials) {
 
         var mass = 1;
         var friction = 0.2; // high friction

@@ -30,7 +30,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 timezone: "Europe/London"
-exclude: ["assets/demos/js-coins/models","assets/demos/js-coins/sfx"]
 
 # SASS
 sass:
