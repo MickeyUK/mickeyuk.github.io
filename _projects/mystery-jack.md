@@ -11,5 +11,10 @@ webm: https://res.cloudinary.com/mickeyuk/video/upload/v1538887575/videos/myster
 video: ''
 description: Play one-on-one blackjack and win one of Jack's coveted mystery boxes!
 syntaxHighlight: false
+undefined:
+- template: game-frame
+  max_width: '960'
+  max_height: '760'
+  source: https://itch.io/embed-upload/920959
 
 ---
