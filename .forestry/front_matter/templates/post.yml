@@ -7,7 +7,7 @@ fields:
   default: post
   config:
     required: true
-  hidden: false
+  hidden: true
   label: layout
   name: layout
 pages:
