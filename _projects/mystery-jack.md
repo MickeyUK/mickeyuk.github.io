@@ -33,7 +33,7 @@ I wanted the player to be rewarded in an interesting way, so these mystery boxes
 
 With the exception of the card faces (public domain) I created all the art assets myself in [Adobe Illustrator](https://www.adobe.com/uk/products/illustrator.html). I made a custom shader for the card burning effect using [this as a guide](http://kylehalladay.com/blog/tutorial/2015/11/10/Dissolve-Shader-Redux.html).
 
-The card sound affects I got from the oh so generous [Kenney](https://www.kenney.nl) who gives away all his game dev assets for free. For the game's soundtrack I used music performed by Comfort Fit as I felt his style was a..._ahem_...**comfort fit** for the game.
+The card sound affects I got from the oh so generous [Kenney](https://www.kenney.nl) who gives away all his game dev assets for free. For the game's soundtrack I used music performed by [Comfort Fit](http://freemusicarchive.org/music/Comfort_Fit/) as I felt his style was a..._ahem_...**comfort fit** for the game.
 
 The game is a bit rough around the edges as I rushed to complete it quickly, but I'm happy with how it came out. In total, I managed to get it all done in about 2 days.
 
