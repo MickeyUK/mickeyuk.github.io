@@ -3,3 +3,5 @@ label: Post
 hide_body: false
 is_partial: false
 fields: []
+pages:
+- _posts/2018-10-08-my-first-ever-post!.md

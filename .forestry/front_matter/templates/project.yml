@@ -230,7 +230,6 @@ fields:
   name: blocks
   description: Custom elements for the project page.
 pages:
-- _posts/my-first-ever-post!.md
 - _projects/batty.md
 - _projects/isometric-controller.md
 - _projects/coins.js.md
