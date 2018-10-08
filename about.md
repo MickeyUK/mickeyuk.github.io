@@ -3,9 +3,9 @@ title: About Me
 layout: about
 categories:
 - ''
-thumbnail: mickey.jpg
----
+thumbnail: https://res.cloudinary.com/mickeyuk/image/upload/v1538884200/images/mickey.jpg
 
+---
 # Overview
 Hi, I'm Michael, but folks call me Mickey! I've been working as a freelance programmer for over 5 years. I specialize in [WordPress](https://en-gb.wordpress.org/) development, tinkering behind the scenes on custom plugins and bug fixes. I'm well versed in most of the widely used web technologies and languages, as well as other popular CMS such as [Joomla](https://www.joomla.org/) and [OpenCart](https://www.opencart.com/). For a full list of my skill set, see below.
 
