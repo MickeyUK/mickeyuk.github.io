@@ -21,11 +21,15 @@
         <main id="page-content">
           <article>
             <div class="article-header">
+              <div class="thumbnail">
+                <img src="{{ page.thumbnail }}" alt=""/>
+              </div>
               <h1>{{ page.title }}</h1>
               <h2>{{ page.type }}</h2>
             </div>
             <div class="article-content">
               {{ content }}
+              <p>
               <div id="contact-form">
                 <form method="POST" action="https://formspree.io/mickeyuk@live.co.uk">
                   <input name="email" placeholder="Your email" type="email">
@@ -33,6 +37,35 @@
                   <button type="submit">Send</button>
                 </form>
               </div>
+              </p>
+              <p>
+                <h1 id="testimonials">Testimonials</h1>
+                <blockquote>
+                  Super nice guy, easy to work with. Helpful and reasonable rates 
+                  for his time. Offers suggestions and is quick with the best 
+                  solutions. I've honestly never met someone who could dig into 
+                  plugins, js and php and make it do exactly what he wants in 
+                  just moments. Amazing really.
+                  <cite><a href="https://www.reddit.com/r/testimonials/comments/4hk11f/pos_umickeyuk_optimized_the_efficiency_of_my/">not-a-shark</a></cite>
+                </blockquote>
+                <p>
+                <blockquote>
+                  Been working with MickeyUK for the last few weeks on a few 
+                  different projects and he has been absolutely wonderful. 
+                  Very knowledgeable with WordPress and custom plugin development. 
+                  Not only does he get the job done quick and effectively, but his 
+                  rates are very fair. Would recommend Mickey to anybody looking for 
+                  a developer for WordPress work, advice, or just a pretty face 
+                  to talk to!
+                  <cite><a href="https://www.reddit.com/r/testimonials/comments/6egiej/pos_umickeyuk_my_wordpress_savior/">HeyItsDan</a></cite>
+                </blockquote>
+                <p>
+                <blockquote>
+                  He's some sort of coding wizard! He's sorted out all the problems I've had 
+                  over the years, always with a can-do attitude.
+                  <cite><a href="https://reddit.com/u/confusedaboutjokes">confusedaboutjokes</a></cite>
+                </blockquote>
+              </p>
             </div>
           </article>
         </main>
