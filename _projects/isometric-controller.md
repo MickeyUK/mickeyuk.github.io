@@ -36,7 +36,7 @@ When implementing isometric movement, we have to calculate what is _forward_ in 
     right = Quaternion.Euler(new Vector3(0,90,0)) * forward;
     Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
 
-The problem with a fixed isometric perspective like this is that the player character will be hidden behind elements in the foreground. To combat this I used I used an outlined diffuse shader to create an x-ray effect, so that the player character is always visible. I used the shader [**here**]().
+The problem with a fixed isometric perspective like this is that the player character will be hidden behind elements in the foreground. To combat this I used I used an outlined diffuse shader to create an x-ray effect, so that the player character is always visible. I used the shader [**here**](http://wiki.unity3d.com/index.php/Silhouette-Outlined_Diffuse).
 
 # Download
 
