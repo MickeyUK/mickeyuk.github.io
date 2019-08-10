@@ -5,7 +5,7 @@ icon: pacman
 layout: project
 date: 2018-10-07 09:58:24 +0000
 categories:
-- javascript
+- Javascript
 - three.js
 thumbnail: https://res.cloudinary.com/mickeyuk/v1538884199/images/coins.jpg
 webm: https://res.cloudinary.com/mickeyuk/video/upload/v1538887577/videos/coins.webm
