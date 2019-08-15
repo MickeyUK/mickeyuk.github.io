@@ -31,11 +31,9 @@ The GitHub repository for the project can be found [HERE](https://github.com/Mic
 # Instructions
 ### Google Places API Key
 
-To obtain an API key for the Google Places service, you will first need to log in to the Google Developer Console. Next, you will need to create a project for the scraper. 
+To obtain an API key for the Google Places service, you will first need to log in to the [Google Cloud Platform](https://console.cloud.google.com/). Next, you will need to create a project for the scraper. Once you've done that, select the **Library** tab and look for **Google Maps Javascript API**. Select that and then click **Enable**. Select **Credentials**, click the **Create Credentials** button and select **API key** from the list. Make a note of the generated API key. You will also need to enable **Places API** on the **Library** tab.
 
-Once you've done that, select the Library tab and look for Google Maps Javascript API. Select that and then click Enable. Select Credentials, click the Create Credentials button and select API key from the list. 
-
-Make a note of the generated API key. You will also need to enable Places API on the Library tab.
+The Google Maps API has now switched to a freemium model, which means the **Billing API** needs to be enabled in the https://console.cloud.google.com/ has well.
 
 ### Hunter.io API Key
 
