@@ -15,6 +15,10 @@ blocks: []
 published: false
 
 ---
+# Overview
+
 Whilst dabbling with various IPTV players, I found a lot of them to be lacking in the design department...particularly on the Windows platform. So I set out to make my own cross platform application with a strong emphasis on aesthetics.
+
+# Development
 
 I coded the core player UI with [jQuery](https://jquery.com "jQuery"). I used the [Metro 4 components library](https://metroui.org.ua/) as a basis for the project.
