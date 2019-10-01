@@ -18,7 +18,7 @@
   });
 
   // Converts image alt text to figcaption
-  $('article img').each(function(){
+  $('article img[src$=".jpg"]').each(function(){
     $(this).wrap('<figure></figure>');
     $(this).after(function(){
       return '<figcaption>'+$(this).attr('alt')+'</figcaption>';
