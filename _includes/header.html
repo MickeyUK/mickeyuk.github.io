@@ -1,18 +1,49 @@
-<header class="site-header" role="banner">
+<!doctype html>
 
-    <div class="wrapper">
-      <div id="menu-toggle">
-        <a href="#" style="float: right;" onclick="event.preventDefault(); $('#nav-main').slideToggle('fast'); $('#menu-contents').slideToggle('fast');">Menu</a>
-      </div>
-      <nav id="nav-main">
-        <ul class="nav nav-horz">
-          <li><a href="/" {% if include.active == "Projects" %}onclick="event.preventDefault()" class="active"{% endif %}>Projects</a></li>
-          <li><a href="https://mickeyuk.portfoliobox.net/" target="_blank">Design Work</a></li>
-          <li><a href="/blog" {% if include.active == "Blog" %}onclick="event.preventDefault()" class="active"{% endif %}>Blog</a></li>
-          <li><a href="/about" {% if include.active == "About Me" %}onclick="event.preventDefault()" class="active"{% endif %}>About Me</a></li>
-          <li><a href="/about#contact" {% if include.active == "About Me" %}onclick="event.preventDefault()" class="active"{% endif %}>Contact</a></li>
-        </ul>
-      </nav>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if page.title %}
+        <title>{{ page.title }} - Michael Dearman - Web &amp; Game Developer</title>
+    {% else %}
+        <title>Michael Dearman - Web &amp; Game Developer</title>
+    {% endif %}
+    <meta name="description" content="{{ page.description }}">
+    <meta name="author" content="Michael Dearman">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icon_32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/icon_96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icon_16.png">
+
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- jQuery -->
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+
+  <header id="header">
+    <ul id="main-nav" class="nav nav-h">
+      <li><a href="/">Projects</a></li>
+      <li><a href="http://mickeyuk.portfoliobox.net">Design Work</a></li>
+      <li><a href="https://www.guru.com/freelancers/michael-dearman">About Me</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+    <div class="nav-toggle">
+      <button>Menu</button>
     </div>
-
-</header>
+    <ul class="div-bars">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </header>

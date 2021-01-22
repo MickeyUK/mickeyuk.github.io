@@ -1,110 +1,227 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% include header.html %}
 
-  {% include head.html %}
+<div id="article-container">
+  <article>
 
-  <body id="page" {% if page.background != '' %} style="background-image: url({{ page.background }});" {% endif %}>
+    <div class="article-header">
 
-    {% include header.html contents=true %}
-
-    <div id="main">
-
-      <div id="page-body">
-        <aside id="sidebar">
-          <div id="sidebar-contents">
-            <div id="article-thumbnail">
-              <img src="{{ page.thumbnail }}" alt=""/>
-            </div>
-            <ul id="article-contents"></ul>
-          </div>
-        </aside>
-        <main id="page-content">
-          <article>
-            <div class="article-header">
-              <div class="thumbnail">
-                <img src="{{ page.thumbnail }}" alt=""/>
-              </div>
-              <h1>{{ page.title }}</h1>
-              <h2>{{ page.type }}</h2>
-            </div>
-            <div class="article-content">
-              {{ content }}
-
-              {% for block in page.blocks %}
-                {% assign template = block.template %}
-
-                {% case template %}
-
-                  {% when 'game-frame' %}
-
-                    <form id="demo-form" method="GET"><center>
-                      <button id="form-submit" type="submit">{{ block.button_label }}</button></center>
-                    </form>
-
-                {% endcase %}
-              {% endfor %}
-            </div>
-          </article>
-        </main>
+      <div class="thumbnail article-header-col">
+        <img src="{{ page.thumbnail }}" alt=""/>
       </div>
 
-      {% include jquery.html %}
-      {% include script-article.html %}
+      <div class="article-meta article-header-col">
+        <h1 class="article-title">{{ page.title }}</h1>
+        <ul class="project-tags">
+          {% for category in page.categories offset:1 %}
+            <li><a href="#" class="tag">{{ category }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
 
-      {% for block in page.blocks %}
-        {% assign template = block.template %}
+      <div class="article-links article-header-col">
+        <table class="links-table">
+            {% for detail in page.meta %}
+                <tr>
+                    <td class="label">{{ detail.label }}</td>
+                    <td class="values">
+                        {% for val in detail.values %}
+                            <span>{{ val }}</span>
+                        {% endfor %}
+                        {% if detail.label == 'Video' %}
+                            <script src="/assets/js/lity.js"></script>
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+            {% for block in page.blocks %}
+                {% assign template = block.template %}
+                {% case template %}
+                    {% when 'game-frame' %}
+                        <tr>
+                            <td colspan="2" style="padding-top: 10px;">
+                                <button class="btn btn-primary" onclick="playGame()">PLAY</button>
+                            </td>
+                        </tr>
+                    {% when 'form-frame' %}
+                        <tr>
+                            <td colspan="2" style="padding-top: 10px;">
+                                <button class="btn btn-primary" onclick="showForm()">DEMO</button>
+                            </td>
+                        </tr>
+                {% endcase %}
+            {% endfor %}
+        </table>
+      </div>
+    </div>
 
-        {% case template %}
+    <div class="article-body">
 
-          {% when 'game-frame' %}
-
-            <div id="game-container">
-              <div id="game" style="max-width: {{ block.max_width }}px; max-height: {{ block.max_height }}px;">
-              </div>
-            </div>
-
-            <script>
-              $('#demo-form').submit(function(e){
-
-                e.preventDefault();
-                $("#form-submit").attr("disabled", true);
-
-                $('<iframe src="{{ block.source }}" width="{{ block.max_width }}" height="{{ block.max_height }}"></iframe>').appendTo('#game');
-
-                $('html, body').animate({
-                    scrollTop: $('#game').offset().top - 80
-                  }, 500, function() {
-                    $('#game').focus();
-                    if ($('#game').is(":focus")) {
-                      return false;
-                    } else {
-                      $('#game').attr('tabindex','-1');
-                      $('#game').focus();
-                    };
-                });
-
-              });
-            </script>
-
-        {% endcase %}
-      {% endfor %}
-
-      {% include footer.html %}
+      {{ content }}
 
     </div>
 
-  </body>
+  </article>
+</div>
 
-  {% if page.syntaxHighlight %}
-    {% include script-highlight.html %}
-  {% endif %}
+<!-- Extra blocks -->
+{% for block in page.blocks %}
+    {% assign template = block.template %}
 
-  <!-- Video popup -->
-  {% if page.video != '' %}
-    <script src="/assets/js/lity.js"></script>
-    <script>
-      $('#article-contents').append('<li><a data-lity="" href="{{ page.video }}">Video</a></li>');
-    </script>
-  {% endif %}
+    {% case template %}
 
-</html>
+        <!-- Gallery -->
+        {% when 'gallery' %}
+        <div class="gallery">
+            {% for image in block.images %}
+                <a data-lity href="{{ image }}.png">
+                    <img src="{{ image }}_thumb.png">
+                </a>
+            {% endfor %}
+        </div>
+
+        <!-- Game block -->
+        {% when 'game-frame' %}
+        <div id="game-container">
+            
+            {% if block.responsive %}
+                <div class="game inactive container" style="max-width: {{ block.max_width }}px; max-height: {{ block.max_height }}px;">
+            {% else %}
+                <div class="game inactive" style="max-width: {{ block.max_width }}px; max-height: {{ block.max_height }}px;">
+            {% endif %}
+
+                <button class="btn btn-primary" onclick="playGame()">PLAY</button>
+
+                {% if block.responsive == false %}
+                    <div class="warning">
+                        This demo is not optimized for mobile devices.
+                    </div>
+                {% endif %}
+
+            </div>
+        </div>
+        <script>
+            function playGame() {
+
+                // Enabled?
+                if ($('.game').hasClass('inactive')) {
+
+                    // Remove border
+                    $('.game').removeClass('inactive');
+
+                    // Add game to game window
+                    $('.game').html('<iframe src="{{ block.source }}" width="100%" max-width="{{ block.max_width }}" height="{{ block.max_height }}"></iframe>');
+                    
+                    // Scroll to game window
+                    $('html, body').animate({
+                        scrollTop: $('.game').offset().top - 80
+                    }, 500, function() {
+                        $('.game').focus();
+                        if ($('.game').is(":focus")) {
+                        return false;
+                        } else {
+                        $('.game').attr('tabindex','-1');
+                        $('.game').focus();
+                        };
+                    });
+
+                }
+
+            }
+        </script>
+        <!-- Game block -->
+
+        <!-- Form block -->
+        {% when 'form-frame' %}
+        <div id="form-container">
+            {% if block.responsive %}
+                <div class="form inactive container" style="max-width: {{ block.max_width }}px; max-height: {{ block.max_height }}px;">
+            {% else %}
+                <div class="form inactive" style="max-width: {{ block.max_width }}px; max-height: {{ block.max_height }}px;">
+            {% endif %}
+
+                {% if block.header %}
+                    <h3>{{ block.header }}</h3>
+                {% endif %}
+
+                {% if block.responsive == false %}
+                    <div class="warning">
+                        This demo is not optimized for mobile devices.
+                    </div>
+                {% endif %}
+
+                <form id="demo-form" method="{{ block.method }}">
+
+                    {% for field in block.fields %}
+
+                        <div class="form-group input-effect">
+                            {% case field.type %}
+                                {% when 'text' %}
+                                    <input name="{{ field.name }}" class="effect-19" type="text" placeholder="">
+                                {% when 'password' %}
+                                    <input name="{{ field.name }}" class="effect-19" type="password" placeholder="">
+                                {% when 'textarea' %}
+                                    <textarea name="{{ field.name }}" class="effect-19"></textarea>
+                            {% endcase %}
+                            <label>{{ field.label }}</label>
+                            <span class="focus-border"><i></i></span>
+                            <span class="desc">{{ field.desc }}</span>
+                        </div>
+                        
+                    {% endfor %}
+
+                    <button type="submit" class="btn btn-primary">
+                        SUBMIT
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $(".form-group input").val("");
+                
+                $(".input-effect input").focusout(function(){
+                if($(this).val() != ""){
+                    $(this).addClass("has-content");
+                }else{
+                    $(this).removeClass("has-content");
+                }
+                });
+            });
+
+            function showForm() {
+
+                // Scroll to form window
+                $('html, body').animate({
+                    scrollTop: $('.form').offset().top - 80
+                }, 500, function() {
+                    $('.form').focus();
+                    if ($('.game').is(":focus")) {
+                    return false;
+                    } else {
+                    $('.form').attr('tabindex','-1');
+                    $('.form').focus();
+                    };
+                });
+
+            }
+
+            $('#demo-form').submit(function(e){
+                e.preventDefault();
+
+                // Remove form
+                $('.form').removeClass('inactive');
+
+                // Add game to game window
+                $('.form').html('<iframe src="{{ block.source }}?'+$(this).serialize()+'" width="100%" height="{{ block.max_height }}"></iframe>');
+            
+            });
+        </script>
+        <!-- Form block -->
+
+    {% endcase %}
+{% endfor %}
+<!-- Extra blocks -->
+<script src="/assets/js/lity.js"></script>
+{% include footer.html %}

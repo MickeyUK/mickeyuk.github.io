@@ -1,0 +1,38 @@
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-v {
+    flex-direction: column;
+}
+
+.nav li {
+    padding: 20px;
+}
+
+.nav-toggle {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: none;
+}
+
+#main-nav {
+    align-items: center;
+    justify-content: center;
+}
+
+#main-nav a {
+    color: $c_header;
+    transition: $sp_hover color;
+    -webkit-transition: $sp_hover color;
+}
+
+#main-nav a:hover {
+    color: $c_hover;
+    transition: $sp_hover color;
+    -webkit-transition: $sp_hover color;
+}

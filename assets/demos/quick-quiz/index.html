@@ -1,0 +1,230 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Quick Quiz</title>
+  <meta name='robots' content='noindex,nofollow' />
+
+  <link rel="stylesheet" href="css/flipclock.css">
+  <link rel="stylesheet" href="css/qquiz.css">
+
+</head>
+
+<body>
+
+    <div id="form-container">
+
+        <div id="timer"></div>
+        
+        <div id="game">
+
+            <div class="form-group input-effect">
+                <input class="effect-19" type="text" placeholder="" style="width: 100%;" 
+                    onkeyup="checkAnswer(this, 'TWVyY3VyeQ==')">
+                <label>What is the closest planet to the Sun?</label>
+                <span class="focus-border">
+                <i></i>
+                </span>
+            </div>
+
+            <div class="form-group input-effect">
+                <input class="effect-19" type="text" placeholder="" style="width: 100%;" 
+                    onkeyup="checkAnswer(this,'U2F0dXJu')">
+                <label>What is the name of the 2nd biggest planet in our solar system?</label>
+                <span class="focus-border">
+                <i></i>
+                </span>
+            </div>
+
+            <div class="form-group input-effect">
+                <input class="effect-19" type="text" placeholder="" style="width: 100%;" 
+                    onkeyup="checkAnswer(this,'VmVudXM=')">
+                <label>What is the hottest planet in our solar system?</label>
+                <span class="focus-border">
+                <i></i>
+                </span>
+            </div>
+
+            <div class="form-group input-effect">
+                <input class="effect-19" type="text" placeholder="" style="width: 100%;" 
+                    onkeyup="checkAnswer(this,'SnVwaXRlcg==')">
+                <label>What planet is famous for its big red spot on it?</label>
+                <span class="focus-border">
+                <i></i>
+                </span>
+            </div>
+
+            <div class="form-group input-effect">
+                <input class="effect-19" type="text" placeholder="" style="width: 100%;" 
+                    onkeyup="checkAnswer(this,'c3Rhcg==')">
+                <label>Is the sun a star or a planet?</label>
+                <span class="focus-border">
+                <i></i>
+                </span>
+            </div>
+
+        </div>
+
+        <div class="game-over" style="display: none; text-align: center; color: #FFF;">
+            <h2>You scored <span class="answers" style="color: yellow;"></span> / 5</h2>
+        </div>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/flipclock.min.js"></script>
+    <script>
+
+        var timer, delay, correctAnswers = 0;
+
+        timer = $('#timer').FlipClock({
+            clockFace: 'MinuteCounter',
+            countdown: true,
+            autoStart: false,
+            callbacks: {
+                stop: function() {
+                    setTimeout(function(){
+                        quizStop();
+                    },2000); 
+                }
+            }
+        });
+
+        function checkAnswer(element, code) {
+            clearTimeout(delay);
+            delay = setTimeout(function(){
+
+                // Disable input
+                $(element).prop('disabled', true);
+
+                // Get answer
+                var guess = $(element).val();
+                var answer = atob(code);
+
+                // Correct answer?
+                if (getEditDistance(guess.toLowerCase(), answer.toLowerCase()) <= 2) {
+
+                    // Put correct answer
+                    $(element).val(answer);
+                    correctAnswers++;
+                    console.log(correctAnswers);
+
+                    // Correct nod!
+                    $(element).addClass('qquiz-correct');
+                    $(element).next().css('color', 'lime');
+                    $(element).next().next().remove();
+                    $(element).addClass("has-content");
+
+                    // Everything correct?
+                    if (correctAnswers > 4) {
+                        setTimeout(function(){
+                            timer.stop();
+                        },1000);
+                        console.log("You won!");
+                    }
+
+                } else {
+
+                    // Clear answer
+                    $(element).val('');
+
+                    // Wrong answer
+                    $(element).addClass('qquiz-wrong');
+                    $(element).next().next().hide();
+                    setTimeout(function(){
+                        $(element).next().next().show();
+                        $(element).removeClass('qquiz-wrong');
+                        $(element).prop('disabled', false);
+                    }, 800);
+
+                }
+
+            }, 800);
+        }
+
+        function quizStop() {
+            $('#game').fadeOut("slow");
+            $('.answers').html(correctAnswers);
+            setTimeout(function(){
+                $('.game-over').fadeIn("slow");
+            },1000);
+            $('html, body').animate({
+                scrollTop: $('#form-container').offset().top
+            }, 500, function() {
+                
+            });
+        }
+
+        $(document).ready(function() {
+
+            // New countdown clock
+            timer.setTime(60);
+            setTimeout(function(){
+                timer.start();
+            },1000);
+
+            // Input label hover effect
+            $(".form-group input").val("");
+            $(".input-effect input").focusout(function(){
+            if($(this).val() != ""){
+                $(this).addClass("has-content");
+            }else if (!$(this).hasClass('qquiz-correct')) {
+                $(this).removeClass("has-content");
+            }
+            });
+        });
+
+        /**
+         * Returns the edit distance between 2 strings.
+         * 
+         * @author Andrei Mackenzie <https://github.com/andrei-m>
+         * @author Milot Mirdita <https://gist.github.com/milot-mirdita>
+         * @author Clément <https://gist.github.com/kigiri>
+         * @copyright 2011 Andrei Mackenzie
+         * @license MIT License
+         * 
+         * @param {string} a The first string.
+         * @param {string} b The second string.
+         * 
+         * @returns {number}
+         */
+        function getEditDistance(a, b) {
+            
+            if (a.length === 0) return b.length;
+            if (b.length === 0) return a.length;
+
+            var matrix = [];
+
+            // increment along the first column of each row
+            var i;
+            for (i = 0; i <= b.length; i++) {
+                matrix[i] = [i];
+            }
+
+            // increment each column in the first row
+            var j;
+            for (j = 0; j <= a.length; j++) {
+                matrix[0][j] = j;
+            }
+
+            // Fill in the rest of the matrix
+            for (i = 1; i <= b.length; i++) {
+                for (j = 1; j <= a.length; j++) {
+                    if (b.charAt(i - 1) === a.charAt(j - 1)) {
+                        matrix[i][j] = matrix[i - 1][j - 1];
+                    } else {
+                        matrix[i][j] = Math.min(matrix[i - 1][j - 1] + 1,   // Substitution
+                                            Math.min(matrix[i][j - 1] + 1,  // Insertion
+                                                matrix[i - 1][j] + 1));     // Deletion
+                    }
+                }
+            }
+
+            return matrix[b.length][a.length];
+            
+        }
+    </script>
+</body>
+</html>

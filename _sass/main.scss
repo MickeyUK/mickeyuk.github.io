@@ -1,0 +1,64 @@
+// Breakpoints
+$content-width:    800px !default;
+$on-tablet:        1024px !default;
+$on-palm:          420px !default;
+
+// Colours
+$c_background: #2F2F2F;
+$c_text: #b8b8b8;
+$c_header: rgb(223, 223, 223);
+$c_footer: #232323;
+
+$c_link: #4CA5D1;
+$c_hover: #B656CE;
+
+$c_error: #FF3232;
+$c_success: #6EC43C;
+$c_warning: #FFDD47;
+
+$c_btn_primary: #366AC4;
+
+// Animation speed
+$sp_hover: .5s;
+
+// Media Queries @include media-query($on-palm)
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+@function ratio($width, $height) {
+  @return percentage( $height / $width);
+}
+
+@mixin generateRatios($width, $height, $prefix: "ratio-") {
+
+    $class-name: $prefix + $width + "x" + $height;
+  
+    .#{$class-name} {
+      padding-bottom: ratio($width, $height);
+    }
+  
+}
+  
+@include generateRatios(16,9);
+@include generateRatios(4,3);
+
+// Partials
+@import 'partials/plugins';
+@import 'partials/layout';
+@import 'partials/nav';
+@import 'partials/buttons';
+@import 'partials/hero';
+@import 'partials/form';
+@import 'partials/grid';
+@import 'partials/article';
+@import 'partials/gallery';
+
+// 3rd-party
+@import 'vendor/lity';

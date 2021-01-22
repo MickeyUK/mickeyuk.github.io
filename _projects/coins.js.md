@@ -1,7 +1,13 @@
 ---
 title: Coins.js
 priority: 2
-icon: pacman
+meta:
+- label: 'Platforms'
+  values:
+    - 'Desktop'
+- label: 'Download'
+  values:
+    - '<a href="https://github.com/MickeyUK/js-coins/">Source Code</a>'
 layout: project
 date: 2018-10-07 09:58:24 +0000
 categories:
@@ -17,6 +23,7 @@ blocks:
   max_width: '960'
   max_height: '760'
   button_label: Play
+  responsive: true
   source: "/assets/demos/js-coins/index.html"
 
 ---
@@ -37,11 +44,3 @@ I wanted some nice coin sound effects and some arcade background ambience to mak
 Three.js has built-in anti-aliasing to combat those jagged edges, but I found it to be too taxing on modest hardware when applied to my game, so instead I opted for a [SMAA](http://www.iryoku.com/smaa/) technique...better performance, and still looks rather nifty! For this I used the SMAA shader [HERE](https://github.com/iryoku/smaa).
 
 I hope to eventually polish this up and turn in to more of a fleshed out game...when I have time, of course!
-
-# Download
-
-The GitHub repository for the project is [HERE](https://github.com/MickeyUK/js-coins/).
-
-# Play
-
-The game in it's current state can be played by clicking the play button below!

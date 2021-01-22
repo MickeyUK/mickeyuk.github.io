@@ -1,6 +1,14 @@
 ---
 title: Isometric Controller
 priority: 3
+meta:
+- label: 'Platforms'
+  values:
+    - Windows
+    - Android
+- label: 'Download'
+  values:
+    - '<a href="https://github.com/MickeyUK/isometric-controller">Source Code</a>'
 icon: unity
 layout: project
 date: 2018-10-07 10:01:18 +0000
@@ -11,13 +19,14 @@ webm: https://res.cloudinary.com/mickeyuk/video/upload/v1538887573/videos/isomet
 video: ''
 description: 'An example of an isometric controller in the Unity engine. '
 syntaxHighlight: true
+syntaxLang: 'cs'
 blocks:
 - template: game-frame
   max_width: '980'
   max_height: '660'
   button_label: Play
   source: "/assets/demos/iso-controller/index.html"
-
+  responsive: false
 ---
 # Overview
 
@@ -37,11 +46,3 @@ When implementing isometric movement, we have to calculate what is _forward_ in 
     Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
 
 The problem with a fixed isometric perspective like this is that the player character will be hidden behind elements in the foreground. To combat this I used I used an outlined diffuse shader to create an x-ray effect, so that the player character is always visible. I used the shader [**here**](http://wiki.unity3d.com/index.php/Silhouette-Outlined_Diffuse).
-
-# Download
-
-The GitHub repository can be found [**here**](https://github.com/MickeyUK/isometric-controller).
-
-# Play
-
-If you want to see it in action, click the play button below.

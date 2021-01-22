@@ -1,0 +1,159 @@
+#article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 0 60px;
+}
+
+.container {
+    max-width: 800px !important;
+    margin: 0 auto;
+}
+
+article {
+    background: $c_footer;
+    padding: 20px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+article .thumbnail img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+article .tag::after {
+    background: $c_footer;
+}
+
+.article-header {
+    display: flex;
+}
+
+.article-header-col {
+    width: 50%;
+}
+
+article .thumbnail {
+    width: 150px;
+    padding-right: 20px;
+}
+
+article .project-tags li {
+    float: none;
+}
+
+.article-title {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.links-table {
+    float: right;
+    text-align: right;
+}
+
+.links-table .label {
+    vertical-align: top;
+    padding-right: 10px;
+    color: #FFF;
+}
+
+.links-table .values span {
+    display: block;
+}
+
+.links-table a {
+    display: block;
+}
+
+.article-body {
+    border-top: inset 1px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.article-body h1 {
+    padding: 6px 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin-left: -40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    background: $c_btn_primary;
+}
+
+.article-body h1:nth-child(1) { background: $c_error; }
+
+blockquote::before {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: Arial, Helvetica, sans-serif;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote {
+    border-left: 5px solid $c_success;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+
+blockquote p {
+    display: inline;
+}
+
+pre {
+    border-radius: 6px !important;
+}
+
+#game-container,
+#form-container {
+    margin-bottom: 40px;
+}
+
+.game {
+    margin: 0 auto;
+}
+
+.game.inactive,
+.form.inactive {
+    border: dashed 1px rgba(255, 255, 255, 0.3);
+    border-radius: 7px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.game .warning {
+    padding: 10px 0;
+}
+
+iframe {
+    border: none;
+}
+
+.game iframe {
+    overflow: hidden;
+    overflow-y: hidden !important;
+}
+
+#form-container h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+@include media-query($on-tablet) {
+
+    #article-container,
+    #form-container,
+    #game-container,
+    .container {
+        width: 100% !important;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  
+}

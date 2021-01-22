@@ -1,19 +1,41 @@
 <footer>
-  <section id="footer" class="flex-grid">
-    <div id="footer-copyright" class="flex-col">
-      <span class="grey">&copy; 2019</span>
-      &nbsp;&nbsp;
-      <b>MickeyUK</b>
+    <div class="row">
+      <div class="col">
+        
+        <div class="footer-logo" style="width: 360px; margin: 0 auto;">
+            <div style="padding-right:20px; float: left;">
+              <img class="mug" src="/assets/images/mug_large_white.png">
+            </div>
+            <div class="footer-logo-text" style="float:left;">
+              <h2>Michael Dearman</h2>
+              <h3>Web &amp; Game Developer</h3>
+            </div>
+            <div style="width:100%; display: block; float: left; padding-top: 10px;">
+              A pun-loving programmer based in London <br>
+              that specializes in WordPress and video <br>
+              game development.
+            </div>
+        </div>
+
+      </div>
+
+      <div class="col">
+
+      </div>
     </div>
-    <div id="footer-links" class="flex-col">
-      <ul class="nav nav-horz social-links">
-        <li><a href="https://github.com/{{ site.social.github }}" target="_blank"><i class="icon icon-github"></i></a></li>
-        <li><a href="https://www.reddit.com/user/{{ site.social.reddit }}" target="_blank"><i class="icon icon-reddit"></i></a></li>
-        <li><a href="https://twitter.com/{{ site.social.twitter }}" target="_blank"><i class="icon icon-twitter"></i></a></li>
-        <li><a href="https://www.youtube.com/channel/{{ site.social.youtube }}" target="_blank"><i class="icon icon-play"></i></a></li>
-        <li><a href="https://www.facebook.com/{{ site.social.facebook }}" target="_blank"><i class="icon icon-facebook2"></i></a></li>
-        <li><a href="https://steamcommunity.com/id/{{ site.social.steam }}" target="_blank"><i class="icon icon-steam2"></i></a></li>
-      </ul>
-    </div>
-  </section>
-</footer>
+  </footer>
+
+    <!-- Syntax Highlighting -->
+    {% if page.syntaxHighlight %}
+        <link rel="stylesheet" href="/assets/css/prism.css">
+        <script>
+            $('code').addClass('language-{{ page.syntaxLang }}');
+        </script>
+        <script src="/assets/js/prism.js"></script>
+    {% endif %}
+    <!-- Syntax Highlighting -->
+
+</body>
+
+
+</html>

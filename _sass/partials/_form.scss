@@ -1,0 +1,103 @@
+select {
+    width: 100%;
+    padding: 7px 14px;
+}
+
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid #ccc; 
+    transition: 0.4s; 
+    background: transparent;
+    border-radius: 0;
+    height: 40px;
+    padding: 5px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #aaa;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 6px;
+    right: 6px;
+}
+
+.select2-dropdown.select2-dropdown--below {
+    background: $c_footer;
+    border-color: $c_footer;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.select2-container--default .select2-results__option[aria-selected="true"] {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    color: #FFF;
+    padding-left: 10px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background: rgba(0,0,0,0.5);
+}
+
+.select2-search--dropdown {
+    padding: 10px;
+}
+
+#form-container .form-group {
+    margin: 20px auto 60px;
+    width: 70%;
+    box-sizing: border-box;
+    display: block;
+    float: none;
+    text-align: left;
+}
+
+.form-group .desc {
+    position: absolute;
+    padding-top: 4px;
+    font-style: italic;
+    color: rgba(255,255,255,0.3);
+}
+
+.form-group textarea {
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+/*= input focus effects css
+=========================== */
+:focus{outline: none;}
+
+.form-group {float: left; width: 100%; margin: 40px 3%; position: relative;} /* necessary to give position: relative to parent. */
+input, textarea {font: 15px/24px "Lato", Arial, sans-serif; color: #FFF; width: 100%; box-sizing: border-box; letter-spacing: 1px; z-index: 3}
+label {
+    pointer-events: none;
+}
+
+.effect-19 {
+    border: 1px solid #ccc; 
+    padding: 7px 14px; 
+    transition: 0.4s; 
+    background: transparent;
+}
+
+.effect-19 ~ .focus-border:before,
+.effect-19 ~ .focus-border:after{content: ""; position: absolute; top: -1px; left: 50%; width: 0; height: 2px; background-color: #3399FF; transition: 0.4s;}
+.effect-19 ~ .focus-border:after{top: auto; bottom: 0;}
+.effect-19 ~ .focus-border i:before,
+.effect-19 ~ .focus-border i:after{content: ""; position: absolute; top: 50%; left: 0; width: 2px; height: 0; background-color: #3399FF; transition: 0.6s;}
+.effect-19 ~ .focus-border i:after{left: auto; right: 0;}
+.effect-19:focus ~ .focus-border:before,
+.effect-19:focus ~ .focus-border:after,
+.has-content.effect-19 ~ .focus-border:before,
+.has-content.effect-19 ~ .focus-border:after{left: 0; width: 100%; transition: 0.4s;}
+.effect-19:focus ~ .focus-border i:before,
+.effect-19:focus ~ .focus-border i:after,
+.has-content.effect-19 ~ .focus-border i:before,
+.has-content.effect-19 ~ .focus-border i:after{top: -1px; height: 100%; transition: 0.6s;}
+.effect-19 ~ label{position: absolute; left: 14px; width: 100%; top: 10px; color: #aaa; transition: 0.3s; z-index: 1; letter-spacing: 0.5px; z-index: 2}
+.effect-19:focus ~ label, .has-content.effect-19 ~ label {top: -20px; left: 0; font-size: 12px; color: #3399FF; transition: 0.3s; z-index: 0}

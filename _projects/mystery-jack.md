@@ -11,12 +11,7 @@ webm: https://res.cloudinary.com/mickeyuk/video/upload/v1538887575/videos/myster
 video: ''
 description: Play one-on-one blackjack and win one of Jack's coveted mystery boxes!
 syntaxHighlight: false
-blocks:
-- template: game-frame
-  max_width: '1280'
-  max_height: '760'
-  button_label: Play
-  source: https://itch.io/embed-upload/920959
+blocks: []
 
 ---
 # Overview
@@ -39,4 +34,4 @@ The game is a bit rough around the edges as I rushed to complete it quickly, but
 
 # Play
 
-You can play the game in it's current state by clicking the play button below.
+This game is temporarily unavailable whilst it is updated and moved to it's new home at <a href="https://retroferret.com">retroferret.com</a>. Check back on <b>29/01/2021</b>!

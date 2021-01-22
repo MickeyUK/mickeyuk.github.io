@@ -1,0 +1,140 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: $c_background;
+    color: $c_text;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: $c_header;
+    font-weight: 600;
+}
+
+a {
+    color: #4CA5D1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: $sp_hover color;
+    -webkit-transition: $sp_hover color;
+}
+
+a:hover {
+    color: #B656CE;
+    transition: $sp_hover color;
+    -webkit-transition: $sp_hover color;
+}
+
+#header {
+    background-color: $c_background;
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    z-index: 8000;
+}
+
+.div-bars {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 4px;
+}
+
+.div-bars li {
+    width: 25%;
+}
+
+.div-bars li:nth-child(1) { background: $c_error; }
+.div-bars li:nth-child(2) { background: $c_link; }
+.div-bars li:nth-child(3) { background: $c_success; }
+.div-bars li:nth-child(4) { background: $c_warning; }
+
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+section {
+    background: $c_background;
+}
+
+#main {
+    box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 40px;
+}
+
+#main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.filter-box {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    background: $c_footer;
+    padding: 60px 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+footer .mug {
+    width: 45px;
+    height: auto;
+    position: relative;
+    top: 8px;
+}
+
+.footer-logo-text h2,
+.footer-logo-text h3 {
+    margin: 0 !important;
+}
+
+.form-center {
+    height: calc(100vh - 252.83px);
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-center form {
+    text-align: left;
+    width: 100%;
+}
+
+.form-center input {
+    width: 100%;
+}
+
+.form-center .form-group {
+    margin: 40px 0;
+}
+
+input[type=submit] {
+    border: solid 1px $c_btn_primary;
+    border-radius: 4px;
+    background: $c_btn_primary;
+    color: $c_header;
+    padding: 6px 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    transition: $sp_hover background, $sp_hover border;
+    -webkit-transition: $sp_hover background, $sp_hover border;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}

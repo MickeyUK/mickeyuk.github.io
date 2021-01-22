@@ -1,0 +1,160 @@
+{% include header.html %}
+
+  <section id="hero" class="hero">
+    <div class="video-background">
+      <div id="video-foreground"></div>
+    </div>
+    <div class="vert-center">
+      <!--<img src="/assets/images/mickey_1.png" style="max-width: 200px; height: auto;">-->
+      <div id="code-mug">
+          <canvas id="code-smoke"></canvas>
+          <div class="mug">
+              <img src="/assets/images/mug_large.png" />
+          </div>
+      </div>
+      <h1>Michael Dearman</h1>
+      <h2>Web & Game Developer</h2>
+    </div>
+  </section>
+
+  <section id="main">
+    <ul class="div-bars">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+      
+      <div class="projects" style="padding-top:40px">
+
+        <!--
+        <div class="row" style="max-width: 1200px; margin: 20px auto 0;">
+          <div class="col" style="width: 70%;">
+            <div class="form-group input-effect">
+              <input class="effect-19" type="text" placeholder="" style="width: 100%;">
+              <label>Search by project name</label>
+              <span class="focus-border">
+              <i></i>
+              </span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <select class="project-type-list" name="state" style="width: 100%;">
+                <option value="AL">Alabama</option>
+                <option value="WY">Wyoming</option>
+              </select>
+            </div>
+          </div>
+        </div>-->
+  
+        <div class="grid">
+  
+          {% assign rows = site.projects.size | divided_by: 3.0 | ceil %}
+  
+          {% for i in (1..rows) %}
+    
+            {% assign offset = forloop.index0 | times: 3 %}
+  
+              <div class="row">
+  
+                {% assign projects = site.projects | sort: 'priority' %}
+                {% for project in projects limit:3 offset:offset %}
+  
+                  <div class="col">
+                    <div class="project">
+                      <a href="{{ project.url }}" class="project-thumb" style="background-image: url('{{ project.thumbnail }}');">
+                        <video class="project-webm" loop preload="none">
+                          <source src="{{ project.webm }}" type="video/webm">
+                        </video>
+                      </a>
+                      <div class="project-title">
+                        <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+                      </div>
+                      <ul class="project-tags">
+                        {% for category in project.categories offset:1 %}
+                          <li><a href="#" class="tag">{{ category }}</a></li>
+                        {% endfor %}
+                      </ul>
+                      <div class="project-desc">
+                          {{ project.description }}
+                      </div>
+                    </div>
+                  </div>
+  
+                {% endfor %}
+  
+              </div>
+  
+            {% endfor %}
+  
+        </div>
+
+      </div>
+
+  </section>
+
+  <script src="/assets/js/jquery-3.4.1.min.js"></script>
+  <script src="/assets/js/select2.min.js"></script>
+
+  <script>
+  $(document).ready(function() {
+    $(".form-group input").val("");
+    
+    $(".input-effect input").focusout(function(){
+      if($(this).val() != ""){
+        $(this).addClass("has-content");
+      }else{
+        $(this).removeClass("has-content");
+      }
+    });
+  });
+
+  $(document).ready(function() {
+    $('.project-type-list').select2();
+  });
+  </script>
+
+  
+<script>
+  /**
+  * Initialize videos.
+  */
+  function initVideo() {
+    $(".project").hover( hoverVideo, hideVideo );
+  }
+
+  /**
+  * Play webm video on hover.
+  * 
+  * @param {object}
+  * @returns {void}
+  */
+  function hoverVideo(e) {
+    $('img', this).remove();
+    $('video', this).get(0).play();
+  }
+
+  /**
+  * Stop webm video on mouse leave.
+  * 
+  * @param {object}
+  * @returns {void}
+  */
+  function hideVideo(e) {
+    $('video', this).get(0).pause();
+    $('video', this).get(0).currentTime = 0;
+  }
+
+  $(document).ready(function(){
+
+    // Hover videos
+    initVideo();
+
+  });
+
+</script>
+
+  {% include script-mug.html %}
+  {% include script-youtube.html %}
+  {% include footer.html %}

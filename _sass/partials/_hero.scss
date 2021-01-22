@@ -1,0 +1,101 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+    background: none;
+}
+
+.video-background {
+    background: #000000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99;
+}
+
+#video-foreground, 
+.video-background iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.video-background {
+    background: #000000;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+}
+
+#video-foreground, .video-background iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #video-foreground { height: 300%; top: -100%; }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #video-foreground { width: 300%; left: -100%; }
+}
+
+// Code mug
+#code-mug img {
+    position: relative;
+    left: 10px;
+}
+
+#code-smoke {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-weight: bold;
+    position: relative;
+    bottom: -30px;
+    z-index: 10;
+}
+
+.vert-center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+#hero h1,
+#hero h2 {
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+#hero h1 {
+    font-size: 42px;
+}
+
+#hero h2 {
+    font-size: 28px;
+}
+
+#hero a {
+    color: $c_warning;
+    transition: color $sp_hover;
+    -webkit-transition: color $sp_hover;
+}
+
+#hero a:hover {
+    color: $c_success;
+    transition: color $sp_hover;
+    -webkit-transition: color $sp_hover;
+}
