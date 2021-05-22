@@ -36,7 +36,7 @@ It Tolls for Thee is a first-person horror game with survival and puzzle element
 
 Development for It Tolls for Thee began in June 2020 by myself. It was born out of a small game I had developed for a <a href="https://itch.io/jam/lux-jam">Lux Jam game jam</a>, where the theme was to "Light and Shadow". I had the idea of a game where the player has to frantically rush around a dusty old house lighting candles that would keep distinguishing, before they are engulfed in shadow. I began development on a full 3D game, but realized I would not have time to complete (I had come to the jam late). Instead, I scaled back the idea, which then became <a href="https://retroferret.itch.io/lights-out">Lights Out</a>.
 
-As I loved the original setting and ideas I had come up with, I decided to come back to my original idea. I fleshed out the story, and began work. Over time, I have worked with freelancers and outsourced some jobs, but I've done the bulk of the work. It will soon be ready for release (aiming for March 2021).
+As I loved the original setting and ideas I had come up with, I decided to come back to my original idea. I fleshed out the story, and began work. Over time, I have worked with freelancers and outsourced some jobs, but I've done the bulk of the work. It will be released some time in 2021.
 
 # Demo
 
