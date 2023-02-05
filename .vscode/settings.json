@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "*.html": "jekyll"
+    },
+    "files.exclude": {
+        "_site": true,
+        ".gitignore": true,
+        ".jekyll-cache": true,
+        ".vscode": true,
+        "Gemfile.lock": true
+    },
+	"liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/assets/css",
+        }
+    ],
+	"liveServer.settings.root": "/_layouts",
+}

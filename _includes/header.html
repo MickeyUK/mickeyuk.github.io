@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="author" content="Michael Dearman">
+
+    <title>MickeyUK - Web & Game Developer</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" type="image/png" href="#">
+</head>
+<body>
+
+    <div id="site" class="container">
+
+        <header id="header">
+                
+                <a id="site-logo" href="/">
+                    <canvas id="code-smoke"></canvas>
+                    <img src="/assets/img/mickeyuk_logo.png" alt="Smash Soda">
+                </a>
+
+                <nav id="nav-main">
+                    <a href="/" {% if include.active-nav contains "Blog" %} class="active" {% endif %}>Blog</a>
+                    <a href="/archive/project" {% if include.active-nav contains "Projects" or page.active-nav contains "Projects" %} class="active" {% endif %}>Projects</a>
+                    <a href="/pages/about" {% if include.active-nav contains "About Me" %} class="active" {% endif %}>About Me</a>
+                    <a href="/pages/contact" {% if include.active-nav contains "Contact" %} class="active" {% endif %}>Contact</a>
+                </nav>
+
+            </header>
+
+            <main id="main">

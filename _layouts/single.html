@@ -1,0 +1,60 @@
+{% if page.categories contains "Project" %}
+    {% include header.html active-nav="Projects" %}
+{% else %}
+    {% include header.html %}
+{% endif %}
+            
+<section class="section single">
+
+    {% include panel.html post=page excerpt=false %}
+
+    {% assign relatedPostsSize = 0 %}
+    {% assign relatedPostsTotal = 2 %}
+
+    {% for category in page.categories %}
+
+        {% for related in site.posts %}
+
+            {% if related.categories contains category and related.title != page.title and relatedPostsSize < relatedPostsTotal %}
+
+                {% assign relatedPostsSize = relatedPostsSize | plus: 1 %}
+
+                {% if relatedPostsSize == 1 %}
+                    <div class="section-header">
+                        <h2>Related Posts</h2>
+                    </div>
+
+                    <div class="panel-grid">
+                {% endif %}
+
+                <a href="{{ related.url }}" class="panel">
+                    <div class="panel-thumbnail compact">
+                        <img src="/assets/img/thumbnails/{{ related.thumbnail }}" alt="">
+                    </div>
+
+                    <div class="panel-body panel-content">
+                        <h4>{{ related.title }}</h4>
+                        <p>{{ related.date | date: "%-d %B %Y" }}</p>
+                    </div>
+                </a>
+
+                {% if relatedPostsSize == relatedPostsTotal %}
+                        </div>
+                    </section>
+                {% endif %}
+
+            {% endif %}
+
+        {% endfor %}
+
+    {% endfor %}
+
+</section>
+
+<div id="comments">
+    {% if page.comments %}
+        {% include comments.html url=page.url slug=page.title %}
+    {% endif %}
+</div>
+
+{% include footer.html %}

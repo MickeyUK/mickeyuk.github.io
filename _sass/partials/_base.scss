@@ -1,0 +1,183 @@
+body {
+    background: #1C1E2D;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: $color-white;
+    font-family: $font-primary;
+}
+
+body a {
+    color: #6ac1fc;
+}
+
+ul {
+    padding: 0 20px;
+}
+
+.mono {
+    font-family: $font-mono;
+    font-size: 14px;
+}
+
+#site {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: $component-spacing;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px 40px 20px;
+    gap: $component-spacing;
+    position: relative;
+}
+
+#main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: $section-spacing;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 720px;
+}
+
+#nav-main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    width: 100%;
+    font-family: $font-primary;
+}
+
+#nav-main a {
+    color: $color-white;
+    text-decoration: none;
+    font-size: $font-size-3;
+    font-weight: bold;
+    transition: color .2s ease-in-out;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+#nav-main a:nth-child(1) {
+    color: #FF556E;
+}
+
+#nav-main a:nth-child(2) {
+    color: #55BBFF;
+}
+
+#nav-main a:nth-child(3) {
+    color: #7ed83d;
+}
+
+#nav-main a:nth-child(4) {
+    color: #FFE355;
+}
+
+#nav-main a:hover {
+    transition: all .2s ease-in-out;
+    color: $color-white;
+}
+
+#nav-main a.active {
+    color: $color-white;
+    
+}
+
+#nav-main a:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: $color-white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .2s ease-in-out;
+}
+
+#nav-main a.active:after {
+    transform: scaleX(1);
+}
+
+#footer {
+    padding: 60px 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.social-link svg {
+    fill: $color-white;
+    width: 48px;
+    height: 48px;
+    transition: all .2s ease-in-out;
+}
+
+.social-link:nth-child(1) svg {
+    fill: #FF556E;
+}
+
+.social-link:nth-child(2) svg {
+    fill: #55BBFF;
+}
+
+.social-link:nth-child(3) svg {
+    fill: #7ed83d;
+}
+
+.social-link:nth-child(4) path {
+    fill: #FFE355;
+}
+
+.social-link:hover svg {
+    fill: $color-white;
+    transition: all .2s ease-in-out;
+}
+
+.social-link:nth-child(4):hover path {
+    fill: $color-white;
+    transition: all .2s ease-in-out;
+}
+
+#footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+#footer-links a {
+    color: $color-white;
+    text-decoration: none;
+    opacity: .7;
+    transition: all .2s ease-in-out;
+}
+
+#footer-links a:hover {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+
+#comments {
+    margin-top: 40px;
+    opacity: .8;
+}

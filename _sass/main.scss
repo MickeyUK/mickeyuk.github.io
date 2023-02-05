@@ -1,0 +1,42 @@
+// Colours
+$color-primary: #272A3D;
+$color-secondary: #1C1E2D;
+$color-tertiary: #2f314d;
+
+$color-brand-1: rgb(201, 42, 42);
+$color-brand-2: rgb(69, 94, 179);
+$color-brand-3: rgb(82, 150, 33);
+$color-brand-4: rgb(204, 167, 4);
+
+$color-white: rgb(240, 240, 240);
+
+// Fonts
+$font-primary: 'Nunito', sans-serif;
+$font-mono: 'Roboto Mono', monospace;
+
+// Font sizes
+$font-size-1: 1.5rem;
+$font-size-2: 1.25rem;
+$font-size-3: 1rem;
+$font-size-4: 0.875rem;
+$font-size-5: 0.75rem;
+
+// Font weights
+$font-weight-1: 100;
+$font-weight-2: 300;
+$font-weight-3: 400;
+$font-weight-4: 500;
+$font-weight-5: 700;
+
+// Spacing
+$component-spacing: 2rem;
+$section-spacing: 1rem;
+
+@import "partials/reset";
+@import "partials/base";
+@import "partials/section";
+@import "partials/panel";
+@import "partials/buttons";
+@import "partials/logo";
+@import "partials/form";
+@import "partials/responsive";

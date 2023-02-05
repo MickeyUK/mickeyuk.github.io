@@ -1,0 +1,16 @@
+{% include header.html active-nav="About Me" %}
+             
+<section class="section info">
+
+    <div class="panel profile">
+        <div class="panel-avatar">
+            <img src="{{ site.url }}/assets/img/avatars/{{ page.user }}.jpg" alt="Profile Picture" class="img-circle">
+        </div>
+        <div class="panel-body panel-content" style="padding: 30px;">
+            {{ page.content }}
+        </div>
+    </div>
+
+</section>
+
+{% include footer.html %}

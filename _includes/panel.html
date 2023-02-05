@@ -1,0 +1,67 @@
+<div class="panel">
+    <div class="panel-thumbnail compact">
+        <img src="/assets/img/thumbnails/{{ include.post.thumbnail }}" alt="">
+    </div>
+
+    <div class="panel-head">
+        <a href="{{ post.url }}" class="panel-header">
+            <h1>{{ include.post.title }}</h1>
+            <div class="panel-meta-box">
+                <div class="panel-meta">
+                    <div class="panel-meta-label">Posted</div>
+                    <div class="panel-meta-value">{{ include.post.date | date: "%-d %B %Y" }}</div>
+                </div>
+            </div>
+        </a>
+        <div class="panel-author">
+            <a href="/pages/about" class="panel-author-image">
+                <img src="/assets/img/avatars/{{ include.post.author }}.jpg" alt="">
+            </a>
+            <div class="panel-author-name">
+                <span>Posted by</span>
+                <a href="/pages/about">{{ include.post.author }}</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-body panel-content">
+
+        {% if include.excerpt %}
+            
+            {{ include.post.content | strip_html | truncatewords: 40 }}
+
+        {% else %}
+
+            {{ include.post.content }}
+
+        {% endif %}
+
+    </div>
+
+    <div class="panel-footer">
+        <div class="panel-meta-box">
+            <div class="panel-meta">
+                {% if include.excerpt %}
+                    <a href="{{ include.post.url }}" class="panel-meta-value">Read more...</a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="panel-meta-box">
+            <div class="panel-meta">
+                <div class="panel-meta-label">
+                    Categories
+                </div>
+                <div class="panel-meta-categories">
+                    {% for category in include.post.categories %}
+
+                        <a class="panel-meta-category" href="http://127.0.0.1:4000/archive/{{ category }}">{{ category }}</a>
+
+                        {% if forloop.last == false %}&nbsp;&#183;&nbsp;{% endif %}
+
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

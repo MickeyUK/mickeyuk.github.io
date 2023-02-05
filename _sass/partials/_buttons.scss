@@ -1,0 +1,25 @@
+.tag {
+    text-decoration: none;
+}
+
+.tag:nth-child(1) {
+    color: $color-brand-1;
+}
+
+.tag:nth-child(2) {
+    color: $color-brand-2;
+}
+
+.tag:nth-child(3) {
+    color: $color-brand-3;
+}
+
+.tag:nth-child(4) {
+    color: $color-brand-4;
+}
+
+.tag-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

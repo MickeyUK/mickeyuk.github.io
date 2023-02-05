@@ -1,0 +1,23 @@
+title: MickeyUK - Web & Game Developer
+email: mickeyuk
+description: >-
+  A pun-loving programmer that specializes
+  in WordPress and video game development.
+domain: mickeyuk.com
+url: http://mickeyuk.com
+baseurl: ""
+
+# Collection settings
+collections:
+  pages:
+    output: true
+    permalink: /pages/:path
+
+# Build settings
+timezone: "Europe/London"
+plugins:
+  - jekyll-feed
+
+# SASS
+sass:
+  sass_dir: _sass
