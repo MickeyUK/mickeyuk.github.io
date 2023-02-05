@@ -35,7 +35,7 @@ author: "Mickey"
       Because every time they got a corner, they opened a pub!
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
@@ -56,7 +56,7 @@ author: "Mickey"
       lack of success on the field.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <p>
@@ -94,7 +94,7 @@ author: "Mickey"
       Does that help clarify the joke? Let me know if you have any further questions.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
@@ -112,7 +112,7 @@ author: "Mickey"
       Becauseay veryevay imetay eythay otgay acornercay, eythay openeday apay ubpay!
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
@@ -134,7 +134,7 @@ author: "Mickey"
       I should try a different one. Is there anything else I can help with?
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
@@ -154,7 +154,7 @@ author: "Mickey"
       spot the Easter egg?
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <p>
@@ -179,7 +179,7 @@ author: "Mickey"
       running a pub.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
@@ -196,7 +196,7 @@ author: "Mickey"
       Because, every, time, they, got, a, corner, they, opened, a, pub!
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
@@ -217,7 +217,7 @@ author: "Mickey"
       Ross: "Haha, that's a good one! I'll have to remember that one."
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <img class="center" style="width: 200px; height: 200px; object-fit: cover; object-position: bottom center; margin-bottom: 0;" src="/assets/img/embeds/chandler.gif" alt="">
@@ -242,7 +242,7 @@ author: "Mickey"
       just not very good at soccer."
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
@@ -264,7 +264,7 @@ author: "Mickey"
       [All three blue men beat their drums in unison]
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <img class="center" style="width: 300px; height: 200px; object-fit: cover; object-position: bottom center;" src="/assets/img/embeds/blueman.gif" alt="">
@@ -283,7 +283,7 @@ author: "Mickey"
       by the siren song of a pint at the pub.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
@@ -300,7 +300,7 @@ author: "Mickey"
       Becaausaa evaa timaa thaa thaa gotaa aa ceeornaa, thaa opaaa aa pooo!"
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
@@ -320,7 +320,7 @@ author: "Mickey"
       They opened a pub, or so it would seem
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
@@ -338,7 +338,7 @@ author: "Mickey"
       focusing on the game.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
@@ -363,7 +363,7 @@ author: "Mickey"
       us, to never give up on our passions, and to always keep pushing forward.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
@@ -398,7 +398,7 @@ author: "Mickey"
       They went to open a pub, not a mourner.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
@@ -416,7 +416,7 @@ author: "Mickey"
       interests, such as running a business.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
@@ -461,7 +461,7 @@ author: "Mickey"
       That's why they were always last, oh so hearty<br>
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/Mickey.jpg" alt="">
+      <img src="/assets/img/avatars/ChatGPT.jpg" alt="">
    </div>
 </div>
 <p>
