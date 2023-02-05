@@ -54,7 +54,7 @@
                 <div class="panel-meta-categories">
                     {% for category in include.post.categories %}
 
-                        <a class="panel-meta-category" href="http://127.0.0.1:4000/archive/{{ category }}">{{ category }}</a>
+                        <a class="panel-meta-category" href="/archive/{{ category }}">{{ category }}</a>
 
                         {% if forloop.last == false %}&nbsp;&#183;&nbsp;{% endif %}
 
