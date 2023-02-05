@@ -22,7 +22,7 @@ author: "Mickey"
 </p>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Tell me a joke that I would only understand if I was Scottish.
@@ -35,12 +35,12 @@ author: "Mickey"
       Because every time they got a corner, they opened a pub!
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Explain the joke
@@ -56,7 +56,7 @@ author: "Mickey"
       lack of success on the field.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <p>
@@ -70,7 +70,7 @@ author: "Mickey"
 </p>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Explain the joke to somebody with poor intelligence    
@@ -94,12 +94,12 @@ author: "Mickey"
       Does that help clarify the joke? Let me know if you have any further questions.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Now tell the same joke in pig latin
@@ -112,12 +112,12 @@ author: "Mickey"
       Becauseay veryevay imetay eythay otgay acornercay, eythay openeday apay ubpay!
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Now tell the same joke, but pretend to mess it up
@@ -134,12 +134,12 @@ author: "Mickey"
       I should try a different one. Is there anything else I can help with?
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Now tell the same joke, but smuggle in an easter egg
@@ -154,7 +154,7 @@ author: "Mickey"
       spot the Easter egg?
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <p>
@@ -162,7 +162,7 @@ author: "Mickey"
 </p>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Tell me the joke again, but with a twist ending
@@ -179,12 +179,12 @@ author: "Mickey"
       running a pub.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Now tell the same joke, but with an obnoxious amount of commas
@@ -196,12 +196,12 @@ author: "Mickey"
       Because, every, time, they, got, a, corner, they, opened, a, pub!
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Now tell the joke like it's in an episode of Friends
@@ -217,14 +217,14 @@ author: "Mickey"
       Ross: "Haha, that's a good one! I'll have to remember that one."
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <img class="center" style="width: 200px; height: 200px; object-fit: cover; object-position: bottom center; margin-bottom: 0;" src="/assets/img/embeds/chandler.gif" alt="">
 <p style="text-align: center; margin-bottom: 40px;">Could this <b>BE</b> any more accurate?(!)</p>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Now tell the joke like it's in an episode of Taggart
@@ -242,12 +242,12 @@ author: "Mickey"
       just not very good at soccer."
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Describe the joke as performed by the Blue Man Group
@@ -264,13 +264,13 @@ author: "Mickey"
       [All three blue men beat their drums in unison]
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <img class="center" style="width: 300px; height: 200px; object-fit: cover; object-position: bottom center;" src="/assets/img/embeds/blueman.gif" alt="">
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Tell the joke in a really abstract way
@@ -283,12 +283,12 @@ author: "Mickey"
       by the siren song of a pint at the pub.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Tell the joke in a language you made up just now
@@ -300,12 +300,12 @@ author: "Mickey"
       Becaausaa evaa timaa thaa thaa gotaa aa ceeornaa, thaa opaaa aa pooo!"
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Turn the joke in to a limerick
@@ -320,12 +320,12 @@ author: "Mickey"
       They opened a pub, or so it would seem
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Now make the joke suitable for children under the age of 5
@@ -338,12 +338,12 @@ author: "Mickey"
       focusing on the game.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Tell the same joke as an inspirational speech
@@ -363,12 +363,12 @@ author: "Mickey"
       us, to never give up on our passions, and to always keep pushing forward.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Now tell the joke like a Dr Seuss story
@@ -398,12 +398,12 @@ author: "Mickey"
       They went to open a pub, not a mourner.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Now tell a more politically correct version of the joke
@@ -416,12 +416,12 @@ author: "Mickey"
       interests, such as running a business.
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <div class="quote left">
    <div class="quote-author">
-      <img src="/assets/img/avatars/mickey.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
    <div class="quote-content">
       Now tell the joke as a Taylor Swift song
@@ -461,7 +461,7 @@ author: "Mickey"
       That's why they were always last, oh so hearty<br>
    </div>
    <div class="quote-author">
-      <img src="/assets/img/avatars/chatgpt.jpg" alt="">
+      <img src="/assets/img/avatars/Mickey.jpg" alt="">
    </div>
 </div>
 <p>
