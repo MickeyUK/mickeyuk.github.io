@@ -49,23 +49,25 @@
                     </div>
                 </div>
 
-                <div class="post">
-                    <h2>Example Header</h2>
-                    <div class="post-thumbnail">
-                        <img src="https://picsum.photos/500/300" alt="">
+                <div class="post-merge">
+                    <div class="post">
+                        <h2>Example Header</h2>
+                        <div class="post-thumbnail">
+                            <img src="https://picsum.photos/500/300" alt="">
+                        </div>
+                        <div class="post-content">
+                            <p>Lorem ip sum dolor sit amet con sectetur adip isicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        </div>
                     </div>
-                    <div class="post-content">
-                        <p>Lorem ip sum dolor sit amet con sectetur adip isicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                    </div>
-                </div>
-
-                <div class="post">
-                    <h2>Example Header</h2>
-                    <div class="post-thumbnail">
-                        <img src="https://picsum.photos/500/300" alt="">
-                    </div>
-                    <div class="post-content">
-                        <p>Lorem ip sum dolor sit amet con sectetur adip isicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+    
+                    <div class="post">
+                        <h2>Example Header</h2>
+                        <div class="post-thumbnail">
+                            <img src="https://picsum.photos/500/300" alt="">
+                        </div>
+                        <div class="post-content">
+                            <p>Lorem ip sum dolor sit amet con sectetur adip isicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -107,18 +109,36 @@
 
     <script>
 
-        // Give me code for scrolling the body to the right slowly after 2 seconds
+        var interval;
+        window.addEventListener('scroll', () => {
+            //console.log("Scrolling");
+        });
+
+        var test = 0;
         var app = document.getElementById('app');
         var interval;
-        window.setTimeout(() => {
-            interval = setInterval(() => {
-                window.scrollBy(1, 0);
 
-                if (window.scrollX >= app.scrollWidth - window.innerWidth) {
-                    clearInterval(interval);
-                }
-            }, 10);
-        }, 5000);
+        function setScroll() {
+            window.setTimeout(() => {
+                test = window.scrollX;
+                interval = setInterval(() => {
+                    window.scrollBy(1, 0);
+
+                    if (window.scrollX >= app.scrollWidth - window.innerWidth) {
+                        clearInterval(interval);
+                    }
+                    
+                    if (test < window.scrollX) {
+                    } else if (test > window.scrollX) {
+                        clearInterval(interval);
+                        setScroll();
+                    }
+                    test = window.scrollX;
+                }, 10);
+            }, 5000);
+        }
+
+        setScroll();
         
     </script>
 
