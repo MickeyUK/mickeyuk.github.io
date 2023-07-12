@@ -198,25 +198,23 @@ h2 {
     font-size: 16px;
 }
 
-@media (max-height: 800px) {
-    #app {
-        padding-top: 40px;
-    }
+#app {
+    padding-top: 40px;
+}
 
-    .post {
-        width: 300px;
-    }
+.post {
+    width: 300px;
+}
 
-    .post-thumbnail {
-        height: 150px;
-    }
+.post-thumbnail {
+    height: 150px;
+}
 
-    .post-content {
-        font-size: 14px;
-    }
+.post-content {
+    font-size: 14px;
+}
 
-    h2 {
-        font-size: 3rem;
-        line-height: 3rem;
-    }
+h2 {
+    font-size: 3rem;
+    line-height: 3rem;
 }
