@@ -1,0 +1,400 @@
+:root {
+    --color-primary: #1167b1;
+    --color-secondary: #fcfcfc;
+    --color-tertiary: #333;
+    --color-quaternary: #ffd900;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-tertiary);
+    background-color: var(--color-secondary);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+i, ul {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    list-style: none;
+}
+
+li::before {
+    content: "\203A";
+    margin-right: 10px;
+    color: var(--color-primary);
+}
+
+.subtitle {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+#header,
+#footer {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 16px 0;
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+
+#header {
+    position: fixed;
+    z-index: 100;
+}
+
+#header.sticky {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transition: all .2s ease-in-out;
+}
+
+#nav-main a,
+#footer a {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    transition: all .2s ease-in-out;
+}
+
+#nav-main a.active {
+    color: var(--color-quaternary);
+}
+
+#nav-main a:hover,
+#footer a:hover {
+    color: var(--color-quaternary);
+    transition: all .2s ease-in-out;
+}
+
+#footer {
+    padding: 24px 0;
+}
+
+#footer i {
+    font-size: 24px;
+}
+
+.nav-toggle {
+    display: none;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.nav-toggle svg {
+    fill: var(--color-secondary);
+    transition: all .2s ease-in-out;
+    width: 24px;
+    height: 24px;
+}
+
+.nav-toggle:hover svg {
+    fill: var(--color-quaternary);
+    transition: all .2s ease-in-out;
+    width: 24px;
+    height: 24px;
+}
+
+.card {
+    width: 300px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.card > div {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.card-body {
+    border: solid 1px #0f528d;
+}
+
+.card-footer {
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid 1px #c7c7c7;
+}
+
+.card-footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    overflow: hidden;
+    border: solid 1px #71a4e6;
+    height: 300px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section a {
+    color: #0088ff;
+    transition: all .2s ease-in-out;
+    font-weight: bold;
+}
+
+section a:hover {
+    color: #333;
+    transition: all .2s ease-in-out;
+}
+
+section svg {
+    transition: all .2s ease-in-out;
+}
+
+section svg:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    fill: #0088ff;
+}
+
+section.fill {
+    background-color: #FFF;
+}
+
+section.shaded {
+    background-color: #f3f3f3;
+}
+
+section.float {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1), 0 -10px 10px rgba(0, 0, 0, .1);
+}
+
+#about {
+    padding-top: 140px;
+}
+
+.divider {
+	position: relative;
+	height: 1px;
+    top: -1px;
+}
+
+.div-transparent:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, #cecdcd, transparent);
+}
+
+.div-arrow-down:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -12px;
+	left: calc(50% - 7px);
+	width: 24px;
+	height: 24px;
+	transform: rotate(45deg);
+	background-color: var(--color-secondary);
+	border-bottom: 1px solid #cecdcd;
+	border-right: 1px solid #cecdcd;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.grid > div {
+    flex: 1 1 200px;
+    max-width: 300px;
+}
+
+.logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 40px;
+}
+
+.logo img,
+.poster img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.poster {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc {
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.desc h2 {
+    margin-bottom: 10px;
+}
+
+#services {
+    background-color: #21639c;
+    color: #FFF;
+}
+
+#services .grid {
+    gap: 10px;
+}
+
+#services .grid-item {
+    text-align: center;
+    flex: 1 1 160px;
+}
+
+#services a {
+    color: var(--color-quaternary);
+}
+
+#contact {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+@media screen and (max-width: 768px) {
+
+    section .space-between {
+        flex-direction: column;
+    }
+
+    #nav-main{
+        display: none;
+    }
+
+    #nav-open {
+        display: flex;
+    }
+
+    #nav-close {
+        display: none;
+    }
+
+    #header.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+    }
+
+    #header.active #nav-open {
+        display: none;
+    }
+
+    #header.active #nav-close {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 24px;
+        z-index: 10;
+    }
+
+    #header.active .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 15px;
+    }
+
+    #header.active #nav-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+}
